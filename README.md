@@ -193,3 +193,12 @@ Tracking emotional signals across multi-turn conversations, allowing the system 
 Optimizing the signal prediction pipeline for speed, enabling practical use in interactive systems.
 
 Such capabilities would be particularly relevant for emotion-sensitive conversational systems, including applications such as mental health support tools, therapeutic chatbots, and emotionally aware digital assistants. By combining structured emotional signal modeling with LLM response generation, future systems could produce responses that are more contextually aware, adaptive, and emotionally aligned with users.
+
+## Trained Models
+
+The trained model weights for BIGRU and distilroberta are not included in the repository due to file size limits.
+
+Models can be reproduced by running the training scripts:
+
+python train_BIGRU.py
+python train_distilroberta.py

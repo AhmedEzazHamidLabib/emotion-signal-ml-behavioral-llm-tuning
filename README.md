@@ -153,6 +153,10 @@ Main libraries used:
 - NumPy
 - pandas
 - tqdm
+  
+Install required packages with:
+
+pip install -r requirements.txt
 
 ## Running the Models
 

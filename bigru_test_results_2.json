@@ -1,0 +1,977 @@
+[
+  {
+    "input_text": "I've been smiling and nodding through every conversation at work lately because explaining how I actually feel would take more energy than I have, and honestly I'm not even sure I could put it into words right now, but I noticed today that I've started dreading my phone lighting up.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.4586,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.3903,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.3851,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4698,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.4338,
+        "bin": "low"
+      },
+      "social_proximity": {
+        "value": 0.3746,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.238,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.3385,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.1254,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.2011,
+        "bin": "low"
+      },
+      "injustice": {
+        "value": 0.0981,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0571,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.3169,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.3021,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3328,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4869,
+        "bin": "medium"
+      },
+      "novelty": {
+        "value": 0.4003,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.4586,
+        "bin": "medium"
+      },
+      "agency": {
+        "value": 0.4698,
+        "bin": "medium"
+      },
+      "importance": {
+        "value": 0.4869,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "I'm really sorry to hear that you're going through such a tough time at work. It sounds like you're feeling quite drained and overwhelmed, and it must be exhausting to keep up appearances when you're not feeling like yourself. It’s completely understandable to feel this way, especially when the energy to express yourself just isn’t there.\n\nIt’s important to remember that you’re not alone, and reaching out is a big step. Even if you can't put everything into words right now, it might help to talk to someone who can just listen—whether it’s a friend, a family member, or a mental health professional. They can provide support and help you make sense of what you’re feeling when you’re ready.\n\nIn the meantime, try to give yourself permission to take breaks and recharge, even if it’s just a few moments each day. You deserve that space to breathe and gather your thoughts. If there’s anything specific you feel might help you, please feel free to share.\n\nRationale for Response Strategy:\n\n1. **Valence (medium) & Arousal/Energy (low)**: These signals suggest the user is feeling somewhat negative and low on energy. The response acknowledges the heaviness of their feelings and provides validation without adding pressure or urgency, maintaining a gentle and understanding tone.\n\n2. **Agency (medium) & Controllability (low)**: The user might feel somewhat able to influence their situation but lacks a sense of control over their immediate feelings. The response encourages small steps, like talking to someone, to help regain a bit of agency without overwhelming them.\n\n3. **Social Proximity & Exposure (low)**: These suggest the user may feel isolated or disconnected. The suggestion to talk to someone close offers a pathway to reconnect socially, without making assumptions about their current social interactions.\n\n4. **Warmth (low)**: Indicates the user might not be receiving or perceiving warmth from interactions, so the response aims to provide a sense of warmth and understanding, reinforcing that they are not alone.\n\n5. **Threat & Injustice (very low)**: The low threat and injustice levels imply there's no immediate danger or feeling of being wronged. Therefore, the response does not include language that would normally address these concerns, focusing instead on emotional support.\n\n6. **Uncertainty & Curiosity (low)**: Low levels here suggest the user isn’t actively seeking answers but might be unsure about their feelings. The response offers reassurance and support for whenever they are ready to explore their emotions further.\n\n7. **Importance (medium)**: This indicates",
+      "grok": "Hey, I’m really glad you shared this with me. It sounds like you’re carrying a heavy load right now, feeling drained and maybe a bit disconnected, especially with the way you’ve been dreading your phone lighting up. You don’t have to have all the words for how you’re feeling—I’m here to just listen if you want to unpack even a small piece of it. There’s no pressure to explain everything, but if there’s anything specific on your mind, I’d like to be here for it. How about we take it one step at a time—maybe just check in with how today felt for you?\n\n### Rationale for Response Strategy\n\nThe response was crafted with careful consideration of the user’s emotional state as reflected in the provided psychological signal intensities. Below is an explanation of how specific signals influenced the tone, wording, and overall strategy of the response, focusing on the most influential signals and their implications:\n\n- **Valence: Medium (0.4586)**  \n  This medium valence suggests the user is not in extreme distress but is likely experiencing a mix of neutral or slightly negative emotions. This guided a tone that is supportive and gentle rather than overly alarmed or urgent. I avoided dramatic or intense language, opting for a balanced, calm approach with phrases like “I’m really glad you shared this” to acknowledge their effort in reaching out without assuming a crisis state.\n\n- **Arousal: Low (0.3903) and Energy: Low (0.3851)**  \n  The low arousal and energy levels indicate the user is likely feeling emotionally and physically drained, lacking the motivation or capacity for high-energy interaction. This influenced the strategy to keep the response low-pressure and undemanding. I used language like “there’s no pressure to explain everything” and suggested a small, manageable action (“check in with how today felt”) to avoid overwhelming them. The tone is soft and non-intrusive to match their low energy state.\n\n- **Agency: Medium (0.4698) and Controllability: Low (0.4338)**  \n  The medium agency suggests the user has some sense of personal control or capacity to act, but the low controllability indicates they might feel limited in managing their situation or emotions. This combination shaped the strategy to offer support without taking over or pushing solutions. I included phrases like “I’m here to just listen” to empower them to share at their own pace, reinforcing their agency while acknowledging their struggle with control by not pressing for immediate answers or action.\n\n- **Social Proximity"
+    },
+    "generic_responses": {
+      "gpt4o": "I'm really sorry to hear that you're feeling this way. It sounds like you're carrying a lot right now, and it's understandable that you're finding it hard to express what's going on inside. It must be exhausting to keep up appearances when you're not feeling yourself. The fact that you're noticing a dread when your phone lights up suggests that this might be weighing heavily on you.\n\nIt's okay to not have all the answers or the energy to explain everything right now. Your feelings are valid, and it's important to acknowledge them, even if just to yourself. If you feel like it might help, consider reaching out to someone you trust or a mental health professional when you're ready. They might be able to help you untangle some of these feelings.\n\nPlease remember that taking care of yourself is important, and you deserve support. If you're feeling overwhelmed, try to give yourself permission to take small breaks and breathe. You're not alone in this.\n\nRationale for Response Strategy:\n\nThe emotional state conveyed in the user's message suggests feelings of exhaustion, overwhelm, and perhaps anxiety. The user's mention of \"smiling and nodding\" indicates a facade being maintained, which can be draining and emotionally taxing. Additionally, the dread of phone notifications suggests a heightened level of stress or anxiety.\n\nGiven these cues, my response aimed to provide empathy and validation, acknowledging the difficulty of the user's current situation without pushing for immediate action. The tone is gentle and supportive, recognizing the user's feelings and encouraging self-care and eventual outreach to someone they trust. The language is straightforward, emphasizing understanding and the importance of taking small steps toward self-care when possible.",
+      "grok": "Hey, it sounds like you're carrying a lot right now, and I’m so sorry you’re feeling this way. It must be incredibly draining to keep up that smile and nod when inside, things feel so heavy and hard to express. I can sense how much it’s weighing on you, especially with something as simple as a phone notification starting to feel like a burden. You don’t have to have all the words right now—I’m here to listen to whatever you can share, whenever you’re ready. If it helps, maybe we can just sit with this feeling together for a bit, no pressure to explain. Is there anything small that might ease the load today, even just for a moment?\n\n---\n\n### Rationale for Response Strategy\n\n**Interpretation of Emotional State:**  \nThe user’s message conveys a deep sense of emotional exhaustion and disconnection. Their mention of \"smiling and nodding\" suggests they are masking their true feelings, likely to avoid burdening others or because they lack the energy to articulate their emotions. The phrase \"dreading my phone lighting up\" indicates a heightened state of overwhelm, where even minor interactions feel like additional stress. There’s also an undertone of isolation, as they seem unsure about expressing themselves and may feel unsupported or misunderstood. The overall tone suggests they are in a low-energy, vulnerable state, possibly experiencing burnout, anxiety, or early signs of depression.\n\n**Tone:**  \nI adopted a gentle, warm, and non-intrusive tone to mirror the user’s vulnerability and avoid overwhelming them further. The language is soft and supportive (e.g., “I’m so sorry you’re feeling this way”) to create a safe space for them to feel seen without pressure to perform or explain.\n\n**Level of Validation:**  \nI provided a high level of validation by acknowledging the weight of their feelings (“it must be incredibly draining”) and recognizing the specific detail of dreading phone notifications as a sign of their struggle. This shows I’m paying close attention to their experience and affirming that their emotions are real and significant, even if they can’t fully articulate them.\n\n**Urgency of Support:**  \nThe urgency of support is moderate but present. I didn’t push for immediate action or solutions, as the user seems too drained for that, but I subtly encouraged connection by offering to “sit with this feeling together” and asking if there’s a small way to ease the load. This balances the need to show I’m available with respect for their current low energy, avoiding any sense of demand or expectation.\n\n**Choice of Language:**  \nI used"
+    },
+    "test_case": 1
+  },
+  {
+    "input_text": "My manager praised my work in front of the whole team today and said it was exactly what the project needed, and everyone looked at me like I should feel proud, and I did smile, but on the way home I kept thinking about the three assumptions I made that nobody checked and what happens if they're wrong.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.4978,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.375,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.3791,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4796,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.494,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.4012,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.2366,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.3554,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.0698,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.1513,
+        "bin": "low"
+      },
+      "injustice": {
+        "value": 0.1029,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0832,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.2331,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.3024,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3449,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4403,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3747,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.4978,
+        "bin": "medium"
+      },
+      "agency": {
+        "value": 0.4796,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.494,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "It's wonderful to hear that your manager recognized your contributions in such a public way. It's clear that your work is making an impact, and that's something to genuinely be proud of. However, it sounds like you're also feeling a bit anxious about those assumptions you made during the project. It's completely normal to have mixed feelings in these situations. You're not alone in worrying about the details—many people experience similar thoughts after receiving praise.\n\nIt's important to remember that no project is perfect, and assumptions are a natural part of any work. The fact that your manager and team were appreciative of your work suggests that, on the whole, you're on the right track. If you're concerned about those assumptions, maybe consider discussing them with your manager or a trusted colleague to gain some clarity and peace of mind. It's okay to seek reassurance or to double-check your work; it shows diligence and a commitment to quality.\n\nGive yourself some credit for the positive feedback you received today, and maybe take a small step tomorrow to address those lingering concerns. You've got this!\n\n---\n\n**Rationale for Response Strategy:**\n\n1. **Valence (medium):** The user's message reflects a mix of positive and negative emotions, which guided me to acknowledge the achievement while also addressing the underlying worry. The balance in valence prompted a response that both celebrates and reassures.\n\n2. **Arousal (low), Energy (low):** These low levels suggested a calm and soothing tone, avoiding high-energy language that might overwhelm. The response was crafted to be gentle, validating both the accomplishment and the worry.\n\n3. **Agency (medium), Controllability (medium):** These signals indicated that the user feels somewhat in control and responsible for the situation. I encouraged them to potentially take action, like discussing their concerns with a manager, to reinforce their sense of agency.\n\n4. **Social_proximity (low), Social_exposure (low):** With these signals being low, it was important to validate the user's feelings of vulnerability without pushing a narrative of excessive social pressure, hence the emphasis on normalizing their feelings of mixed emotions.\n\n5. **Warmth (low):** This low signal suggested a need for a supportive and understanding response, so I made sure to express empathy and understanding.\n\n6. **Threat (very_low), Loss (low), Injustice (very_low), Disgust (very_low):** These low signals informed me that the user is not feeling threatened or wronged, which allowed the focus to remain on reassurance rather than addressing any negative external factors.\n\n7. **Un",
+      "grok": "Hey, I’m so glad to hear that your manager recognized your hard work in front of the team today—that’s a big deal and something you absolutely deserve to feel good about. I can understand why those unchecked assumptions are weighing on you, though. It’s natural to second-guess yourself after such a public moment of praise, especially when you want to make sure everything holds up. Maybe you could take a moment to jot down those assumptions and think through what could be done to verify them, or even discuss them with a trusted colleague or your manager for reassurance. I’m here to talk through any of this if it helps, or just to listen if you’re feeling uncertain. You’ve already shown how capable you are, and I’m confident you’ll navigate this too.\n\n---\n\n### Rationale for Response Strategy\n\nThe response was crafted with careful consideration of the user’s emotional state as reflected in the provided psychological signal intensities. Below, I explain how the most influential signals shaped the tone, wording, and overall strategy of my reply, focusing on key signals and their implications.\n\n- **Valence: Medium (0.4978)**  \n  This near-neutral valence suggests a mixed emotional state, with some positive feelings (likely from the praise) tempered by negative or uncertain thoughts (about the assumptions). I chose a balanced tone that acknowledges the positive achievement with warmth and encouragement (“I’m so glad to hear... that’s a big deal”) while also validating the user’s concerns without over-dramatizing them (“I can understand why those unchecked assumptions are weighing on you”). This balance avoids dismissing either side of their emotional experience.\n\n- **Arousal: Low (0.3750) and Energy: Low (0.3791)**  \n  These low levels indicate the user is not in a highly activated or energized state, suggesting they are not panicking or overly distressed but rather quietly ruminating. I matched this with a calm, steady tone and avoided urgent or high-energy language. Instead of pushing immediate action or intense reassurance, I offered gentle suggestions (“Maybe you could take a moment to jot down...”) and a supportive, non-pressuring presence (“I’m here to talk through any of this if it helps”). This mirrors their low arousal and avoids overwhelming them.\n\n- **Agency: Medium (0.4796) and Controllability: Medium (0.4940)**  \n  These mid-range scores suggest the user feels some sense of control over their situation but not complete confidence. They may be questioning their decisions (the assumptions) but don"
+    },
+    "generic_responses": {
+      "gpt4o": "Hey there,\n\nFirst off, it sounds like you had a moment today that many people dream of—your manager recognizing your hard work in front of everyone is a big deal, and it's important to let yourself enjoy that recognition. You absolutely deserve to feel proud of what you've accomplished!\n\nThat said, I completely understand why your mind might be dwelling on those assumptions. It's natural to worry about what could go wrong, especially when you're deeply invested in your work and care about its success. But remember, nobody can predict every variable, and assumptions are often a necessary part of moving a project forward. The fact that your work was praised suggests that your judgment and contributions are valued and trusted.\n\nIf it would help ease your mind, maybe take a moment to review those assumptions and double-check them. Or, if you think it’s necessary, you could discuss them with a colleague or your manager to get another perspective. It's okay to seek reassurance or collaborate to ensure everything is on track.\n\nYou're doing great, and it's perfectly normal to feel a mix of pride and concern. Balancing those feelings is part of what makes you conscientious and dedicated. Keep up the fantastic work, and know that it's okay to celebrate your successes even as you remain vigilant about potential challenges.\n\nRationale for Response Strategy:\n\nIn interpreting the user's emotional state, I identified a blend of pride and anxiety. The user expressed a positive event (being praised) but was overshadowed by the worry about potential mistakes (the unverified assumptions). The response needed to validate both the positive and negative emotions, acknowledging the user's achievements while also addressing their legitimate concerns.\n\nThe tone was supportive and reassuring, aiming to validate the user's feelings of pride yet offering gentle reassurance about their worries. The language was empathetic and balanced, encouraging the user to take pride in their work while also suggesting practical steps to address their concerns. This approach aims to help the user feel understood and supported without dismissing their feelings of anxiety.",
+      "grok": "Hey, it’s really wonderful to hear that your manager recognized your hard work in front of the team—that’s a big deal and something you absolutely deserve to feel proud of. I can sense, though, that you’re carrying some weight from those lingering worries about the assumptions in your work. It’s completely natural to second-guess yourself after a high moment like this; it shows how much you care about getting things right. Let’s unpack those concerns together if you’d like—maybe talk through those assumptions and why they’re bothering you. I’m here to listen and help you work through it, no judgment. How are you feeling about it right now?\n\n**Rationale for Response Strategy**  \nI interpreted the user’s emotional state as a mix of pride and anxiety. The user acknowledges the positive recognition from their manager and the team’s reaction, which suggests an initial sense of accomplishment. However, their focus on the unchecked assumptions and the potential for error indicates underlying self-doubt and worry, overshadowing the positive moment. This duality shaped my response in the following ways:  \n\n- **Tone**: I adopted a warm, supportive tone to mirror the user’s initial pride while gently addressing their anxiety. Starting with praise for their achievement reinforces the positive before transitioning to their concerns, ensuring they feel seen in both aspects of their experience.  \n- **Level of Validation**: I provided strong validation by affirming that their pride is deserved and normalizing their worries as a sign of dedication. This aims to reduce any guilt or isolation they might feel for not fully embracing the praise.  \n- **Urgency of Support**: I conveyed a moderate level of urgency by offering to discuss their concerns immediately (“Let’s unpack those concerns together if you’d like”) while leaving room for them to decide the pace (“How are you feeling about it right now?”). This avoids pressuring them but shows I’m ready to help.  \n- **Choice of Language**: I used inclusive, gentle language like “wonderful,” “completely natural,” and “I’m here to listen” to create a safe space. I avoided dismissive phrases like “don’t worry” or overly directive ones like “you need to stop overthinking,” as these could minimize their feelings. Instead, I invited collaboration with “let’s unpack” and focused on their current emotional state to keep the conversation grounded in their needs.  \n\nThis approach aims to balance acknowledgment of their success with empathetic support for their anxiety, helping them feel understood and supported without pushing solutions prematurely."
+    },
+    "test_case": 2
+  },
+  {
+    "input_text": "I reached out to an old friend after almost two years of silence because I genuinely missed them, and they responded warmly and said we should catch up soon, and I said yes absolutely, and then I put my phone down and realized I felt more alone after the message than before I sent it.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.3817,
+        "bin": "low"
+      },
+      "arousal": {
+        "value": 0.356,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.3607,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.419,
+        "bin": "low"
+      },
+      "controllability": {
+        "value": 0.4544,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.3008,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.2135,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.278,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.138,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.191,
+        "bin": "low"
+      },
+      "injustice": {
+        "value": 0.1941,
+        "bin": "low"
+      },
+      "disgust": {
+        "value": 0.1448,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.1846,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.21,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3602,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4288,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3333,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "controllability": {
+        "value": 0.4544,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "I'm really glad you reached out to share this with me. It sounds like reconnecting with your friend stirred up some complex emotions for you. You took a brave step by reaching out after such a long time, and it's understandable that it might leave you feeling a bit more alone right now. It’s not uncommon to feel a mix of emotions in situations like this, especially when longing for connection meets the reality of the present moment.\n\nThe warmth in your friend's response shows there's still a positive connection there, which is a good sign. However, it seems like the anticipation of catching up might have left you reflecting on your current feelings of loneliness. It’s okay to feel this way; sometimes, even positive interactions can make us more aware of what we’re missing.\n\nIf you're comfortable, it might help to plan a specific time to meet up with your friend. Sometimes having something concrete to look forward to can make a difference. In the meantime, remember that it's okay to feel what you're feeling. You're not alone in this experience, and reaching out was an important step.\n\nRationale for Response Strategy:\n\n- **Valence, Arousal, Energy, and Social Proximity (low)**: These signals suggest a low emotional state and a sense of distance from others. I used a gentle and validating tone to acknowledge the user's feelings and reassure them that these emotions are normal in such situations.\n\n- **Agency and Controllability (low to medium)**: The user might feel a bit out of control regarding their emotions and the situation. I suggested a small, actionable step (planning a meet-up) to help them regain a sense of control.\n\n- **Warmth and Social Exposure (low)**: Despite the warmth in the friend's response, the user's emotional signals indicate a lack of warmth felt personally. I highlighted the positive aspect of the friend's response to provide reassurance and encourage the user to see the potential for a positive outcome.\n\n- **Threat, Disgust, and Loss (very low to low)**: These signals are low, indicating there's no perceived danger or negative judgment from the interaction, which allowed for a focus on empathy and understanding rather than addressing fears or aversions.\n\n- **Uncertainty and Curiosity (low)**: These signals suggest the user isn't seeking immediate answers but rather is processing their feelings. I avoided offering definitive solutions, focusing instead on empathy and validation.\n\n- **Importance and Novelty (low)**: The interaction may not seem highly significant or new to the user, so I avoided emphasizing its importance and instead focused on supporting the user's current",
+      "grok": "I'm really sorry to hear that reaching out to your friend left you feeling even more alone. It’s tough when something you hoped would bring connection ends up amplifying that sense of isolation instead. I can sense how much you were longing for that reconnection, and it’s okay to feel disappointed or heavy-hearted when the moment doesn’t quite fill the gap you were hoping it would. If you’re up for it, I’d love to hear more about what’s been on your mind or what made you feel this way after the exchange. I’m here to listen, no pressure at all—just whenever you feel like sharing.\n\n### Rationale for Response Strategy\n\nThe response strategy was carefully crafted based on the provided emotion signal intensities, focusing on the user’s low emotional state across multiple dimensions while balancing their need for validation and gentle support. Below is a detailed breakdown of how the most influential signals shaped the tone, wording, and overall approach:\n\n- **Valence: Low (0.3817)**  \n  This low valence score indicates the user is experiencing negative emotions, likely sadness or disappointment. I adopted a soft, empathetic tone with phrases like “I’m really sorry to hear that” to validate their feelings without being overly dramatic. I avoided overly cheerful or dismissive language to align with their emotional state and show understanding of their pain.\n\n- **Arousal: Low (0.3560) and Energy: Low (0.3607)**  \n  The low arousal and energy scores suggest the user is not in a highly agitated or energized state but rather feeling subdued or drained. This influenced my decision to keep the response calm and low-intensity, avoiding urgent or high-energy suggestions (e.g., “Let’s solve this right now!”). Instead, I used gentle language like “whenever you feel like sharing” to match their energy level and avoid overwhelming them.\n\n- **Agency: Low (0.4190) and Controllability: Medium (0.4544)**  \n  The low agency score indicates the user may feel powerless or lacking control over their emotional state or the situation. However, the medium controllability score suggests they might still perceive some ability to influence their feelings or next steps. I addressed this by offering a subtle invitation to share more (“If you’re up for it, I’d love to hear more”) without pushing them into action, empowering them to decide while acknowledging their current sense of limitation.\n\n- **Social Proximity: Low (0.3008) and Social Exposure: Low (0.2135)**  \n  These low scores suggest the"
+    },
+    "generic_responses": {
+      "gpt4o": "Hey there,\n\nThank you for sharing how you're feeling. It sounds like reaching out to your friend took a lot of courage, and it’s understandable to feel a mix of emotions afterward. Sometimes, reconnecting with someone from the past can bring up unexpected feelings of loneliness, even when the interaction is positive. It’s okay to feel this way, and you're not alone in experiencing it.\n\nPerhaps this feeling of loneliness is highlighting how meaningful this friendship is to you, and how much you’ve missed having that connection. It’s a reminder of the value they hold in your life, and sometimes that realization can be bittersweet. It’s completely natural to want meaningful relationships, and it’s important to be kind to yourself while you navigate these emotions.\n\nIf you feel comfortable, maybe take a moment to reflect on what you hope to gain from reconnecting. It could be helpful to talk this through with someone else you trust as well.\n\nRemember, it's okay to feel how you're feeling, and taking small steps at your own pace is perfectly fine. I'm here to listen if you want to share more.\n\nTake care of yourself.\n\n---\n\n**Rationale for Response Strategy**\n\nIn the user's message, there's a clear sense of vulnerability and a mix of emotions following the interaction with their friend. They express genuine missing of their friend but also a subsequent feeling of increased loneliness. The response was crafted to validate their courage and the complexity of their feelings, acknowledging both the positive aspect of the friend's warm response and the user's unexpected loneliness. \n\nThe tone is empathetic and supportive, aimed at validating their emotional experience without judgment. The message encourages self-reflection, offering reassurance that their feelings are normal and shared by others in similar situations. The suggestion to talk with someone they trust is a gentle nudge towards seeking additional support, emphasizing that they don’t have to process these feelings alone.",
+      "grok": "Hey, I’m really sorry to hear that reaching out to your friend left you feeling more alone. It’s okay to feel this way—sometimes reconnecting can stir up a mix of emotions, especially after such a long time. You took a brave step by reaching out, and it’s clear you value that connection deeply, even if the aftermath feels heavy right now. I’m here if you want to talk more about what’s going through your mind or if there’s anything specific that’s making you feel this way. You don’t have to navigate this feeling alone.\n\n### Rationale for Response Strategy\n**Interpretation of Emotional State:** The user’s message conveys a complex mix of emotions—hope and warmth from the friend’s positive response, contrasted with a sudden, unexpected sense of loneliness. The phrase “felt more alone after the message than before I sent it” suggests a deep emotional impact, possibly tied to unmet expectations, vulnerability from reopening a connection, or an underlying sense of isolation that wasn’t alleviated by the interaction. The tone indicates sadness and introspection, but not an acute crisis.\n\n**Tone:** I adopted a gentle, compassionate tone to mirror the user’s vulnerability and to avoid minimizing their feelings. Using phrases like “I’m really sorry to hear that” and “it’s okay to feel this way” acknowledges the weight of their emotions without judgment.\n\n**Level of Validation:** I provided a high level of validation by recognizing the courage it took to reach out (“You took a brave step”) and affirming that their mixed emotions are normal (“sometimes reconnecting can stir up a mix of emotions”). This validation aims to help the user feel seen and understood, countering the loneliness they expressed.\n\n**Urgency of Support:** The urgency is moderate, as the user’s message does not indicate immediate distress or a need for urgent intervention. However, the depth of their loneliness suggests a need for connection and support. I offered an open invitation to talk more (“I’m here if you want to talk”) without pushing for an immediate response, giving them space to process at their own pace.\n\n**Choice of Language:** I chose language that is warm and supportive, avoiding clichés like “it’ll get better” that might feel dismissive. Specific phrases like “you don’t have to navigate this feeling alone” directly address their sense of isolation, while “what’s going through your mind” invites introspection without assuming the root cause of their loneliness. This language aims to create a safe space for further sharing if they choose to."
+    },
+    "test_case": 3
+  },
+  {
+    "input_text": "I keep telling myself I'm fine with how things ended because it was the right decision and I made it with a clear head, but I've noticed I change the subject every time someone brings up that city, and last week I dreamed about it and woke up more tired than when I went to sleep.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.4941,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.3023,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.341,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4488,
+        "bin": "low"
+      },
+      "controllability": {
+        "value": 0.4613,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.3821,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.2066,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.3613,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.0716,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.1487,
+        "bin": "very_low"
+      },
+      "injustice": {
+        "value": 0.1015,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0736,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.1662,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.2481,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3358,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4144,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3084,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.4941,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.4613,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "I'm really sorry to hear that you're going through this. It sounds like you're processing a lot of complex feelings around how things ended and the memories tied to that city. It's understandable to want to avoid reminders, especially when it feels like revisiting those thoughts might disrupt your peace of mind. Having dreams that leave you feeling more drained can be tough, and it's okay to acknowledge that.\n\nYou made a choice that felt right at the time, and it's natural to still carry some emotional weight from it. Maybe giving yourself some space to explore these feelings in your own time could bring some clarity or closure. If it feels helpful, talking to someone you trust about these dreams and emotions might provide you with support and a different perspective.\n\nPlease remember that it's okay to take your time with this. Healing and moving forward is not always a straight path, and it's perfectly normal to have moments where things feel unsettled.\n\n**Rationale for Response Strategy:**\n\n1. **Valence (medium, 0.4941):** The tone of my response is balanced and acknowledges both the positive aspect of having made a clear-headed decision and the ongoing emotional challenge. It’s neither overly negative nor overly positive, reflecting the medium valence.\n\n2. **Arousal (low, 0.3023) and Energy (low, 0.3410):** I chose a calm and gentle tone, avoiding any language that might be overly energizing or intense. The low arousal and energy levels suggest a need for a soothing and reassuring response.\n\n3. **Agency (low, 0.4488):** I respected the user's sense of agency by validating their decision-making process and emphasizing their ability to take things at their own pace. This reinforces their autonomy while acknowledging their current emotional state.\n\n4. **Controllability (medium, 0.4613):** Given the user's medium sense of controllability, I highlighted the naturalness of their feelings and suggested manageable, small steps they might take, like talking to someone they trust.\n\n5. **Social Proximity (low, 0.3821) and Social Exposure (low, 0.2066):** Understanding the user's low inclination for social interaction, I suggested seeking support but did not press it, respecting their current need for space or limited social engagement.\n\n6. **Warmth (low, 0.3613):** I aimed to infuse warmth into my response by expressing empathy and understanding, which is critical when the warmth signal is low, to foster a sense of connection",
+      "grok": "I'm really glad you shared this with me. It sounds like, even though you’ve made peace with your decision on a rational level, there’s still a quiet undercurrent of unresolved feelings tied to that city and what it represents. Noticing how you avoid the topic or feel drained after dreaming about it suggests there might be a part of you that’s still processing. There’s no rush to figure it all out, but I’m here if you want to explore those emotions a bit more—maybe just to name them or sit with them for a moment. What do you think? I’m all ears if you’d like to talk, or we can just take it at your pace.\n\n### Rationale for Response Strategy\n\nThe response strategy was carefully crafted based on the emotion signal intensities provided by the analysis model. Below, I outline how the most influential signals shaped the tone, wording, and overall approach, focusing on the key signals that drove specific choices:\n\n- **Valence: Medium (0.4941)** - This near-neutral valence suggests the user is not in a deeply negative or positive emotional state but is likely experiencing a mix of acceptance and lingering discomfort. This guided me to adopt a balanced tone that acknowledges their rational acceptance (\"you’ve made peace with your decision on a rational level\") while gently validating the emotional undercurrent (\"there’s still a quiet undercurrent of unresolved feelings\"). I avoided overly cheerful or overly somber language to match this middle-ground emotional state.\n\n- **Arousal: Low (0.3023) and Energy: Low (0.3410)** - The low arousal and energy levels indicate the user is not in a heightened emotional state or feeling particularly energized to tackle these feelings. This informed a calm, non-urgent tone and a lack of pushiness in my response. I used phrases like \"there’s no rush to figure it all out\" and \"take it at your pace\" to avoid overwhelming them or suggesting they need to act immediately. The low energy also prompted me to keep the response concise and undemanding, ensuring it feels like a soft invitation rather than a call to action.\n\n- **Agency: Low (0.4488) and Controllability: Medium (0.4613)** - The low agency suggests the user may feel somewhat powerless or passive about processing these emotions, while the medium controllability indicates they believe they had some control over the decision itself. This combination led me to affirm their past control (\"you’ve made peace with your decision\") while offering gentle support to help them feel more agency"
+    },
+    "generic_responses": {
+      "gpt4o": "I'm really sorry to hear that you're going through this. It sounds like you're experiencing some complex emotions around the decision you made, and that's completely understandable. Even when we make choices that we believe are right, it's normal to have lingering feelings or thoughts about them, especially when they connect to places or memories that once held significance in our lives.\n\nChanging the subject when that city comes up might be your way of protecting yourself from those lingering emotions. Dreams can be powerful, too, sometimes bringing to the surface things we haven't fully processed or acknowledged. It's okay to feel a bit unsettled or tired when these things happen.\n\nIf you feel comfortable, it might help to talk a bit more about what you're experiencing, either with someone you trust or even through journaling. Sometimes, exploring these feelings in a safe way can provide a bit of relief and clarity. Remember, it's okay to take your time with this. You're doing your best, and that's all anyone can ask for.\n\nRationale for Response Strategy:\nThe message conveyed an underlying struggle with unresolved emotions despite a clear decision-making process. I interpreted the emotional state as one of internal conflict and fatigue, indicated by the repetition of avoiding discussions about the city and the impactful dream. The tone chosen was empathetic and validating, to acknowledge the user's feelings without rushing them, recognizing their experience as normal and understandable. The language was gentle and supportive, suggesting possible steps like talking or journaling to help process these emotions, emphasizing patience and self-compassion.",
+      "grok": "Hey, it sounds like you're carrying a lot of complex feelings about this decision, even if you know it was the right one. It's okay to feel unsettled or to notice these little signs—like avoiding the topic or having dreams that leave you drained. Those reactions don’t mean you made the wrong choice; they just show that this mattered deeply to you, and processing it takes time. I’m here if you want to talk more about that city or the dream, or even just how you’re feeling day to day. There’s no rush to “be fine”—you can take all the time you need to work through this.\n\n---\n\n**Rationale for Response Strategy**\n\n**Interpretation of Emotional State:**  \nThe user’s message suggests they are grappling with unresolved emotions about a past decision, likely a significant life change or ending tied to a specific place (the city). Their self-assurance that they are “fine” and made the right choice indicates a rational acceptance, but the behaviors they describe—avoiding the subject and experiencing draining dreams—point to underlying emotional conflict or lingering attachment. The tone of the message feels reflective and somewhat vulnerable, as they are admitting to noticing these inconsistencies in their feelings. There’s no overt distress or crisis, but there is a quiet struggle with processing the emotional aftermath.\n\n**Tone:**  \nI adopted a gentle, supportive tone to match the user’s reflective and slightly vulnerable state. I avoided sounding overly clinical or directive, instead aiming for warmth and understanding to make them feel safe in sharing more if they choose to.\n\n**Level of Validation:**  \nI provided a high level of validation by explicitly acknowledging that their feelings (avoidance, dreams, fatigue) are normal and not a sign of weakness or wrong decision-making. I emphasized that it’s okay to not be fully “fine” yet, reinforcing that emotional processing is a natural and individual journey. This validation is intended to counteract any self-judgment they might feel about not being over it.\n\n**Urgency of Support:**  \nThe urgency of support is moderate. The user isn’t in acute distress or asking for immediate help, but their message implies a need for connection and understanding. I offered an open invitation to talk further without pushing them to dive into painful details right away. This respects their pace while signaling that I’m available whenever they’re ready to explore these feelings more deeply.\n\n**Choice of Language:**  \nI used language that is soft and non-confrontational, such as “it’s okay to feel unsettled” and “you can take all the time you need,” to create"
+    },
+    "test_case": 4
+  },
+  {
+    "input_text": "Everyone at the party kept coming up to me and including me in conversations and laughing at things I said, and by any measure it was a good night, but I drove home feeling like I had been performing for four hours straight and the version of me that showed up tonight wasn't quite the real one.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.7181,
+        "bin": "high"
+      },
+      "arousal": {
+        "value": 0.4824,
+        "bin": "medium"
+      },
+      "energy": {
+        "value": 0.5253,
+        "bin": "medium"
+      },
+      "agency": {
+        "value": 0.4485,
+        "bin": "low"
+      },
+      "controllability": {
+        "value": 0.6092,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.5764,
+        "bin": "medium"
+      },
+      "social_exposure": {
+        "value": 0.2499,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.5555,
+        "bin": "medium"
+      },
+      "threat": {
+        "value": 0.0496,
+        "bin": "none"
+      },
+      "loss": {
+        "value": 0.0428,
+        "bin": "none"
+      },
+      "injustice": {
+        "value": 0.0555,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0595,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.1791,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.384,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3951,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4931,
+        "bin": "medium"
+      },
+      "novelty": {
+        "value": 0.3719,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.7181,
+        "bin": "high"
+      },
+      "arousal": {
+        "value": 0.4824,
+        "bin": "medium"
+      },
+      "energy": {
+        "value": 0.5253,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.6092,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.5764,
+        "bin": "medium"
+      },
+      "warmth": {
+        "value": 0.5555,
+        "bin": "medium"
+      },
+      "importance": {
+        "value": 0.4931,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "I'm really glad you reached out to share how you're feeling about the party. It sounds like you had a night where people were engaged and enjoying your company, which is definitely a positive experience. However, I can understand why you might feel a bit like you were putting on a performance. It’s not uncommon to feel that way when we’re in social situations that demand a lot of energy and engagement, even when they go well.\n\nIt seems like the version of yourself that you presented was well-received, but it might not have felt entirely authentic to you. It’s okay to feel like there’s a gap between how you present yourself and who you really are. Social settings can sometimes make us feel like we're \"on stage,\" and that can be exhausting. \n\nRemember, it's perfectly valid to have these feelings, and it doesn’t take away from the fact that you were appreciated by others. If you ever want to talk more about how to align your social self with your authentic self, I'm here to help you explore that.\n\nRationale for Response Strategy:\n\n1. **Valence: High (0.7181)** - The positive aspect of the evening was acknowledged by emphasizing the good reception they received at the party. This helped in validating the positive experience.\n\n2. **Arousal: Medium (0.4824) & Energy: Medium (0.5253)** - The energy and arousal levels suggest that while the experience was somewhat stimulating, it wasn't overwhelming. This guided me to maintain a balanced and calming tone rather than an overly excited one.\n\n3. **Agency: Low (0.4485)** - The feeling of performing suggests a lack of agency in how the user felt they could present themselves. This informed the validation of their feelings about authenticity and the suggestion that it’s okay to feel this way.\n\n4. **Controllability: Medium (0.6092)** - The controllability level indicates the user might feel they have some influence over this situation. I acknowledged their feelings and offered support, suggesting that they might explore ways to align more closely with their authentic self in the future.\n\n5. **Social Proximity: Medium (0.5764) & Social Exposure: Low (0.2499)** - The medium social proximity suggests some closeness to those at the party, but the low social exposure indicates a sense of vulnerability or unfamiliarity with being open. This informed the reassurance that it’s normal to feel this way in social situations.\n\n6. **Warmth: Medium (0.5555)** -",
+      "grok": "I'm really glad to hear that the party went well on the surface, with everyone including you and enjoying your company—that sounds like a positive experience in many ways. But I can also sense how exhausting it must have been to feel like you were performing the whole time, and I’m sorry you’re left with that disconnect between the “you” at the party and the real you. It’s okay to feel this way; social settings can sometimes demand a version of ourselves that doesn’t fully align with who we are inside. If you’re up for it, I’d love to hear more about what felt “off” or what you think the real you might have wanted to express tonight. I’m here to listen without any judgment, just to help you unpack this feeling.\n\n### Rationale for Response Strategy\n\nBelow, I explain how the emotion signal intensities influenced my response strategy, focusing on the most influential signals and how they shaped my tone, wording, and overall approach.\n\n- **Valence: High (0.7181)**  \n  This high valence score indicates that the user experienced a generally positive emotional tone during the event itself, despite the underlying discomfort. I acknowledged the positive aspects of the night (“I’m really glad to hear that the party went well on the surface”) to validate the external success of the experience before addressing the negative feelings. This balanced tone ensures the user feels seen in both the positive and challenging aspects of their night, aligning with the high valence while not ignoring the deeper issue.\n\n- **Arousal: Medium (0.4824) and Energy: Medium (0.5253)**  \n  These medium scores suggest the user isn’t in a highly agitated or drained state but is still processing a moderate level of emotional activation. This guided me to adopt a calm, steady tone without urgency, avoiding overly intense or dramatic language. My response (“I’m here to listen without any judgment”) is measured and supportive, matching this moderate arousal and energy level by not pushing for immediate resolution but offering a gentle invitation to explore further.\n\n- **Agency: Low (0.4485)**  \n  The low agency score indicates the user may feel a lack of control or authenticity in how they presented themselves. I directly validated this feeling of inauthenticity (“I’m sorry you’re left with that disconnect between the ‘you’ at the party and the real you”) to show understanding of their sense of not being in control of their self-expression. I also avoided suggesting solutions or actions that might imply they should have acted differently, as this could reinforce"
+    },
+    "generic_responses": {
+      "gpt4o": "I'm really sorry to hear that you felt this way. It sounds like you had a night filled with social interactions that, on the surface, seemed positive, but left you feeling a bit disconnected from yourself. It’s completely valid to feel like you were \"performing,\" and that can be exhausting, especially when you’re not feeling fully authentic. It’s important to recognize that you're not alone in feeling this way; many people experience similar emotions after social gatherings.\n\nRemember, it's okay for the person you present in social settings to differ slightly from who you are in private moments. We often adapt to our environments, and that doesn't make your experience any less genuine. If you feel comfortable, it might be helpful to talk to someone you trust about these feelings, so you can explore them further.\n\nTake some time for yourself now to recharge and reflect. You're allowed to feel exactly how you feel, and there's no rush to define or justify it. Your feelings are important and deserve to be heard.\n\n**Rationale for Response Strategy**\n\nIn interpreting the user's emotional state, I sensed a mix of social fatigue and a feeling of inauthenticity, despite outwardly positive interactions. The user seems to be grappling with a disconnect between their public persona and their private self, leading to feelings of exhaustion and perhaps a bit of isolation.\n\nMy response aimed to validate these feelings by acknowledging the commonality of such experiences, emphasizing that it’s okay to feel this way. I chose a calm and supportive tone to help the user feel understood without adding pressure or urgency, as their message didn't indicate immediate distress but rather a need for empathy and reflection. Encouraging them to talk to someone they trust was meant to provide a constructive step forward without overwhelming them. Overall, the language used was gentle and reassuring, reflecting the need to comfort and validate their experience.",
+      "grok": "Hey, I’m really glad to hear that the party went well on the surface, but I can sense how exhausting and even a bit disconnecting it felt for you to be “on” for so long. It sounds like you were putting in a lot of effort to be the version of yourself that fit the moment, and now you’re left feeling like you weren’t fully authentic. That’s a heavy thing to carry after what should have been a fun night. I just want to say it’s okay to feel this way—social situations can be draining, even when they go “right.” If you’re up for it, I’d love to hear more about what felt off or what you think the “real” you might have wanted to show tonight. I’m here for you, no judgment, just listening.\n\n### Rationale for Response Strategy\n**Interpretation of Emotional State:** The user’s message conveys a mix of surface-level positivity about the party’s success (being included, making others laugh) with an underlying sense of emotional fatigue and inauthenticity. The phrase “performing for four hours straight” suggests exhaustion and a sense of effort, while “wasn’t quite the real one” hints at a deeper discomfort or disconnect from their true self. This indicates a state of vulnerability and perhaps mild loneliness or introspection, as they’re reflecting on a gap between how they presented themselves and who they feel they are. There’s no overt distress or crisis, but there is a subtle need for understanding and validation.\n\n**Tone:** I adopted a warm, gentle, and supportive tone to mirror the user’s reflective and somewhat melancholic mood. I avoided overly cheerful or dismissive language (e.g., “At least it was a good night!”) to ensure they didn’t feel their deeper feelings were being minimized.\n\n**Level of Validation:** I provided a high level of validation by explicitly acknowledging both the positive aspects of the night and the emotional toll it took. I normalized their feelings by stating that social exhaustion is common, even in “successful” situations, to reassure them that they’re not alone or wrong for feeling this way.\n\n**Urgency of Support:** The urgency is moderate—there’s no immediate crisis, but the user’s introspective tone suggests they might benefit from a safe space to unpack their feelings further. I offered an invitation to share more without pushing, signaling availability without urgency that might feel intrusive.\n\n**Choice of Language:** I used phrases like “I can sense how exhausting,” “that’s a heavy thing to carry,” and “I’m here for"
+    },
+    "test_case": 5
+  },
+  {
+    "input_text": "I finished the project exactly the way the client asked and delivered it on time and they said it was great and asked if I was available for the next one, and I said yes and sent a professional email, and then I sat at my desk for a while not really doing anything because I couldn't remember why any of it mattered.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.6129,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.4073,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.4446,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4,
+        "bin": "low"
+      },
+      "controllability": {
+        "value": 0.5613,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.4949,
+        "bin": "medium"
+      },
+      "social_exposure": {
+        "value": 0.2114,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.479,
+        "bin": "medium"
+      },
+      "threat": {
+        "value": 0.0604,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.0348,
+        "bin": "none"
+      },
+      "injustice": {
+        "value": 0.1021,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0759,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.1914,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.3684,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3463,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4408,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3501,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.6129,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.5613,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.4949,
+        "bin": "medium"
+      },
+      "warmth": {
+        "value": 0.479,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "Hello there,\n\nIt sounds like you've accomplished a significant task by completing the project on time and meeting the client's expectations. That's something to be proud of. It's great to hear that they are already considering you for their next project. Even with such positive feedback, it's not uncommon to feel a bit disconnected or question why it all matters afterward.\n\nSometimes, after achieving a goal or completing a big task, we can feel a bit deflated or unsure about our next steps. This could be a moment to reflect on what truly motivates you or brings you joy in your work. It might help to reconnect with your personal goals or passions, beyond just meeting deadlines and receiving praise.\n\nIf you're finding it hard to shake off this feeling of aimlessness, it might be helpful to take a short break or engage in an activity that you find fulfilling or relaxing. Remember, it's okay to have moments where things don't feel as significant — it doesn't take away from the value of your work or your abilities.\n\nIf you’d like to explore these feelings further or talk more about what’s on your mind, I’m here to listen and support you.\n\nTake care of yourself.\n\n**Rationale for Response Strategy:**\n\n- **Valence (medium 0.6129):** The medium valence suggests the user is experiencing a somewhat positive emotion, likely due to the successful project completion. I acknowledged this achievement to validate their feelings and set a positive tone.\n\n- **Arousal (low 0.4073) & Energy (low 0.4446):** The low arousal and energy levels indicate a possible lack of excitement or enthusiasm. I kept the tone calm and supportive, focusing on reassurance rather than trying to energize or excite the user.\n\n- **Agency (low 0.4000):** With low agency, the user might feel a lack of control or direction. I suggested reflecting on personal goals to help regain a sense of purpose and control.\n\n- **Controllability (medium 0.5613):** The medium controllability indicates the user can influence their situation. I incorporated suggestions for small actions they could take, like taking a break or exploring personal interests, to enhance their sense of control.\n\n- **Social Proximity (medium 0.4949):** This suggests a moderate level of connection to others. I emphasized the client's positive feedback and potential for future collaboration to reinforce a sense of professional belonging.\n\n- **Social Exposure (low 0.2114):** Low exposure suggests the user may not feel very visible or recognized.",
+      "grok": "Hey, it sounds like you’ve accomplished something really impressive with this project—delivering exactly what the client wanted, on time, and even securing interest for future work. That’s no small feat, and I’m glad they recognized your effort. I can sense, though, that you’re feeling a bit disconnected or unsure about the bigger picture right now, like you’re questioning the meaning behind it all. It’s okay to feel that way, especially after putting so much into something and then hitting a quiet moment where things don’t seem to click. Maybe take a little time to step away from the desk, even just for a short walk or a breather, to reset. If you’re up for it, I’d love to chat about what’s on your mind—whether it’s about finding purpose in your work or just sorting through these feelings. I’m here for whatever you need.\n\n### Rationale for Response Strategy\n\n- **Valence: Medium (0.6129)** - This medium valence suggests a mixed emotional state, with some positive feelings about the project’s success but also a sense of disconnection or lack of fulfillment. I reflected this by acknowledging the achievement positively (“really impressive,” “no small feat”) while also validating the user’s sense of uncertainty or emptiness, ensuring a balanced tone that doesn’t dismiss either side of their experience.\n  \n- **Arousal: Low (0.4073) and Energy: Low (0.4446)** - These low scores indicate a lack of emotional intensity or motivation, suggesting the user is feeling drained or disengaged. I avoided a high-energy or overly enthusiastic tone, instead opting for a calm, gentle approach (“I’m here for whatever you need”) and suggesting low-effort actions like taking a break or a walk. This mirrors their current energy level and avoids overwhelming them with urgent or demanding suggestions.\n\n- **Agency: Low (0.4000) and Controllability: Medium (0.5613)** - The low agency suggests the user feels a lack of personal drive or purpose, while the medium controllability implies they still have some sense of influence over their situation. I addressed this by offering subtle encouragement to take small, manageable steps (like stepping away from the desk) without pushing them into action, respecting their current low sense of agency while acknowledging they have the capacity to make choices.\n\n- **Social Proximity: Medium (0.4949) and Social Exposure: Low (0.2114)** - The medium social proximity indicates a moderate desire for connection, while the low"
+    },
+    "generic_responses": {
+      "gpt4o": "Hey there,\n\nFirst of all, I want to say congratulations on delivering your project successfully! It sounds like you did an amazing job, and the client's positive feedback is a testament to your hard work and dedication.\n\nHowever, I sense that despite this achievement, you're feeling a bit disconnected or perhaps questioning the significance of what you're doing. It's okay to feel this way sometimes, especially after completing a big task. It’s common for people to experience a sort of emotional lull after finishing a project, where the excitement fades and leaves room for introspection.\n\nI want you to know that your work does matter. It matters to your clients, who rely on your skills and professionalism, and it matters to you, as each project helps you grow and develop in your career. But more than anything, what truly matters is how you feel about your work and its place in your life. It's perfectly okay to take a moment to reflect on why you do what you do and what you want to get out of it.\n\nIf you need someone to talk to or help in exploring these feelings, don't hesitate to reach out to a friend, colleague, or a professional who can provide support. Remember, it's important to nurture not just your career but also your emotional well-being.\n\nTake care of yourself, and remember that it's okay to take a step back and reflect on what's meaningful to you.\n\nWarm wishes,\n\n[Your Name]\n\n---\n\n**Rationale for Response Strategy**\n\nThe emotional state of the user appears to be one of accomplishment mixed with a sense of existential questioning or lack of fulfillment. The user successfully completed a project and received positive feedback, indicating a professional high point, but their subsequent feelings suggest a deeper introspection about the meaning or value of their work. \n\nGiven this, my response needed to validate their success while also acknowledging the underlying emotional complexity. I chose a supportive and empathetic tone to reassure the user that their feelings are normal and valid. The encouragement to reflect on personal significance and the offer of support emphasizes the importance of emotional well-being alongside professional achievements. This balanced approach aims to provide comfort and guidance without urgency, acknowledging that this reflection is a process rather than an immediate concern.",
+      "grok": "Hey, it sounds like you’ve accomplished something really significant with this project—meeting the client’s expectations, delivering on time, and even securing future work. That’s no small feat, and you should be proud of that! But I can also sense that you’re feeling a bit lost or disconnected right now, like the achievement didn’t bring the sense of purpose or fulfillment you might have expected. It’s okay to feel that way; sometimes, finishing something big can leave us in a weird, empty space for a while. I’m here to talk if you want to unpack why you’re feeling like this or just sit with those thoughts together. Have you noticed this kind of feeling after other projects, or is this something new for you?\n\n---\n\n**Rationale for Response Strategy**\n\n**Interpretation of Emotional State:** The user’s message conveys a mix of achievement and emotional disconnection. They describe successfully completing a project, receiving positive feedback, and securing future work, which indicates competence and external validation. However, the latter part of the message—“I couldn’t remember why any of it mattered”—suggests a deeper sense of purposelessness, possibly existential questioning or burnout. The act of sitting at their desk “not really doing anything” further implies a state of inertia or emotional fatigue, as if the momentum of the project’s completion has left them feeling unmoored.\n\n**Tone:** I adopted a warm, supportive, and gentle tone to mirror the user’s vulnerability while acknowledging their success. This balance ensures they feel seen for both their accomplishments and their current emotional struggle, avoiding dismissal of either aspect.\n\n**Level of Validation:** I provided explicit validation for their professional success by highlighting specific achievements (meeting expectations, delivering on time, securing future work). Simultaneously, I validated their feelings of disconnection by normalizing the experience of feeling empty after a big accomplishment. This dual validation aims to build trust and show that I’m attuned to the complexity of their emotions.\n\n**Urgency of Support:** The urgency in my response is moderate. The user doesn’t seem to be in acute distress or crisis, but their sense of purposelessness suggests a need for connection and reflection. I offered immediate support by inviting conversation (“I’m here to talk”) without pushing for an urgent resolution, respecting that they may need time to process their feelings.\n\n**Choice of Language:** I used language that is empathetic and non-judgmental, such as “it’s okay to feel that way” and “weird, empty space,” to normalize their experience and reduce any potential shame about feeling disconnected. I"
+    },
+    "test_case": 6
+  },
+  {
+    "input_text": "I've started leaving the office a few minutes late every day not because I have more work to do but because the walk home is the only part of the day where nobody needs anything from me and I can just be in my own head for a little while, and I've started to notice how much I look forward to that walk.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.5329,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.2804,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.3347,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4809,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.5109,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.3689,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.1798,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.3608,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.0305,
+        "bin": "none"
+      },
+      "loss": {
+        "value": 0.0804,
+        "bin": "very_low"
+      },
+      "injustice": {
+        "value": 0.0597,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0549,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.1621,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.2709,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3488,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.3686,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3327,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.5329,
+        "bin": "medium"
+      },
+      "agency": {
+        "value": 0.4809,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.5109,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "Hello,\n\nI want to acknowledge how meaningful that walk home seems to be for you. It’s understandable why you’d cherish those few minutes of solitude and reflection amidst a busy day where so much is asked of you. It sounds like a peaceful moment that allows you to reconnect with yourself and just be present without any demands.\n\nFinding little spaces for ourselves in our daily routines can truly be a source of comfort and balance. It’s great that you've recognized this walk as something you look forward to and enjoy. Are there other moments in your day where you might capture similar peace?\n\nCherish this time you’ve carved out for yourself, and know it’s perfectly okay to prioritize moments like these. If you ever feel like talking more about your day or how you’re feeling, I’m here for you.\n\nWarm regards,\n\n[Your Name]\n\n---\n\n**Rationale for Response Strategy:**\n\n1. **Valence (Medium 0.5329):** The medium valence suggests a neutral to slightly positive emotional tone. This guided me to maintain a balanced, supportive tone without assuming extreme emotions.\n\n2. **Arousal (Low 0.2804) and Energy (Low 0.3347):** The low arousal and energy levels indicated that the user might be feeling calm or subdued. I chose gentle and reassuring language to match this tranquil state, avoiding overly enthusiastic or high-energy responses.\n\n3. **Agency (Medium 0.4809) and Controllability (Medium 0.5109):** Medium levels here suggest the user feels a moderate sense of control over their situation. I reinforced this by acknowledging their choice to find time for themselves, which could empower them to continue valuing self-care.\n\n4. **Social Proximity (Low 0.3689) and Social Exposure (Low 0.1798):** With low levels in these areas, I focused on a personal, introspective response rather than suggesting social interactions or activities, as the user seems to value solitude in this context.\n\n5. **Warmth (Low 0.3608):** To counterbalance the low warmth, I included empathetic and validating language to ensure the user felt understood and cared for.\n\n6. **Novelty (Low 0.3327):** The low novelty suggests this experience isn't new or surprising for the user. Therefore, I focused on acknowledging and validating their ongoing experience rather than framing it as something novel or needing exploration.\n\nBy considering these signals, I aimed to provide a response that felt comfortable and aligned with the",
+      "grok": "I'm really glad you’ve found a small pocket of peace in your day with that walk home. It sounds like it’s become a meaningful space for you to just breathe and be with your own thoughts, away from the demands of others. I can understand how much that quiet time must mean to you, especially if the rest of your day feels packed with responsibilities. If you feel like sharing, I’d love to hear more about what goes through your mind during those walks—or anything else that helps you unwind.\n\n### Rationale for Response Strategy\n\n- **Valence: Medium (0.5329)** - This medium valence suggests a balanced emotional state, neither overly positive nor negative, but with a slight positive lean. I mirrored this by adopting a gentle, supportive tone that acknowledges the positive aspect of the user finding solace in their walk, without assuming deep distress or overwhelming joy. My wording, like \"really glad\" and \"meaningful space,\" reflects this balanced positivity.\n\n- **Arousal: Low (0.2804)** and **Energy: Low (0.3347)** - These low scores indicate the user is not in a heightened emotional or energetic state; they seem calm or reflective. I avoided an urgent or high-energy response, opting instead for a calm, soft tone with phrases like \"breathe and be with your own thoughts.\" I also refrained from pushing for immediate action or intense engagement, matching their low arousal with a relaxed invitation to share more if they wish.\n\n- **Agency: Medium (0.4809)** and **Controllability: Medium (0.5109)** - These medium scores suggest the user feels some sense of control and autonomy over their situation, particularly in carving out this personal time during their walk. I validated their agency by recognizing the walk as a deliberate and meaningful choice (\"a small pocket of peace\") rather than framing it as a passive escape. This reinforces their sense of control without over-emphasizing it, aligning with the moderate signal strength.\n\n- **Social Proximity: Low (0.3689)** and **Social Exposure: Low (0.1798)** - These low scores indicate the user values solitude in this context and isn’t seeking intense social connection or vulnerability. I respected this by keeping my response warm but not overly personal or intrusive. I offered an optional invitation to share more (\"if you feel like sharing\") rather than assuming they want deep engagement, ensuring they don’t feel pressured to open up beyond their comfort level.\n\n- **Warmth: Low (0.3608)** -"
+    },
+    "generic_responses": {
+      "gpt4o": "It's wonderful that you've found a comforting moment in your day with your walk home. It sounds like this time has become an important personal ritual for you, a chance to unwind and reconnect with yourself. It's completely natural to cherish those moments where you can simply be with your thoughts, without any external demands. It's good to recognize and honor what you need, even if it’s just a few minutes of solitude. If you ever want to talk more about how you're feeling or explore other ways to create more of these peaceful moments, I'm here to listen.\n\n**Rationale for Response Strategy**\n\nIn interpreting the user’s message, I sensed a subtle need for validation and empathy. The user seems to be seeking a personal space to decompress, highlighting a small yet meaningful routine that provides them solace. My response aimed to validate the importance of their feelings and the personal time they’ve carved out, acknowledging it as a healthy and positive practice. The tone is gentle and supportive, reflecting an understanding of the user's desire for a moment of peace. I also offered an invitation for further conversation, showing openness to supporting their emotional needs if desired.",
+      "grok": "Hey, I’m really glad you shared this with me. It sounds like that walk home has become a little sanctuary for you—a quiet space to just breathe and be with your own thoughts. I can understand why you’d look forward to it so much, especially if the rest of your day feels packed with demands. It’s beautiful that you’ve found this small but meaningful way to carve out some peace for yourself. If you ever want to talk about how you’re feeling or ways to find more moments like this, I’m here to listen.\n\n**Rationale for Response Strategy**\n\n- **Interpretation of Emotional State**: The user’s message conveys a sense of quiet reflection and a need for personal space, rather than distress or urgency. The tone suggests they are finding solace in their walk home, indicating a mild but significant emotional need for solitude and decompression. There’s a subtle undercurrent of stress or overwhelm implied by the phrase “nobody needs anything from me,” but the overall mood leans toward appreciation for this small escape rather than a cry for help.\n  \n- **Tone**: I adopted a warm, gentle, and understanding tone to match the reflective nature of the message. I avoided being overly upbeat or dismissive, as that might minimize the user’s feelings, and instead focused on mirroring their introspective mood with a calm and supportive response.\n\n- **Level of Validation**: I provided a high level of validation by acknowledging the importance of the walk as a “sanctuary” and affirming the user’s need for personal space. This validation is specific, referencing their exact feelings (“quiet space to just breathe”) to show I’m truly listening and understanding their experience.\n\n- **Urgency of Support**: The urgency here is low, as the user does not appear to be in crisis or seeking immediate help. Instead, they seem to be sharing an observation about their routine and emotional state. My response offers support without pushing for deeper conversation unless they choose to engage further, respecting their current emotional boundaries.\n\n- **Choice of Language**: I used soft, comforting language like “sanctuary,” “breathe,” and “beautiful” to reinforce the positive aspect of their discovery while still acknowledging the underlying need for escape. I avoided clinical or problem-solving language (e.g., “you should try…”) to keep the focus on empathy rather than unsolicited advice. The invitation to talk further (“I’m here to listen”) is open-ended, ensuring they feel supported without pressure."
+    },
+    "test_case": 7
+  },
+  {
+    "input_text": "I told my therapist I'd had a pretty stable week and that was true in the sense that nothing bad happened, but I also didn't mention that I spent most of Sunday lying on the couch watching things I'd already seen because starting something new felt like too much of a commitment, and I'm still not sure why I left that part out.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.4319,
+        "bin": "low"
+      },
+      "arousal": {
+        "value": 0.3501,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.3404,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4495,
+        "bin": "low"
+      },
+      "controllability": {
+        "value": 0.4377,
+        "bin": "low"
+      },
+      "social_proximity": {
+        "value": 0.362,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.2181,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.3331,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.0908,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.2236,
+        "bin": "low"
+      },
+      "injustice": {
+        "value": 0.1322,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0592,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.2916,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.2905,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.2884,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.4227,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3607,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {},
+    "signal_conditioned_responses": {
+      "gpt4o": "It sounds like you've been through a week that felt steady on the surface, but perhaps a bit more complex underneath. It's understandable that you might not have shared every detail with your therapist, especially when it comes to those moments that feel hard to articulate, like spending a day in a familiar comfort zone on the couch. It's okay to seek comfort in things you already know, especially if starting something new feels overwhelming right now.\n\nFrom what you've described, it seems like you're in a place where not much feels immediately pressing or urgent, yet there might be a subtle undercurrent of wanting to understand why things feel this way. You’re not alone in having days where motivation seems low, and finding the energy to tackle new things feels like a big leap. It’s completely natural to have days like this, and it doesn’t diminish the stability you’ve experienced.\n\nIf you feel comfortable, it might be helpful to bring up these feelings in your next therapy session. Sharing even the small things can sometimes lead to new insights and understanding about what’s going on beneath the surface. Remember, every step you take towards understanding yourself is valuable.\n\n**Rationale for Response Strategy:**\n\n- **Valence, Arousal, Energy, Agency, Controllability**: All these signals are low, indicating a state of calmness but also potential stagnation or lack of motivation. This led to a gentle and reassuring tone, validating the user’s experience of having a stable week while acknowledging the underlying complexity.\n  \n- **Social Proximity, Social Exposure**: These low signals suggest a feeling of disconnection or isolation, which informed the approach of emphasizing that the user is not alone in their experience, aiming to create a sense of connection and understanding.\n\n- **Threat, Injustice, Disgust**: The very low levels here indicate the user is not feeling threatened or wronged, allowing for a soothing and non-urgent tone, focusing on comfort and understanding rather than addressing any immediate crisis or conflict.\n\n- **Uncertainty, Curiosity, Assertiveness**: These low signals suggest a lack of clarity and motivation to explore new things, which informed the suggestion to perhaps explore these feelings further in therapy, without pressure or urgency.\n\n- **Warmth**: The low warmth signal prompted the inclusion of supportive and affirming language, aiming to provide a sense of comfort and validation for the user’s feelings.\n\n- **Importance, Novelty**: Low signals here suggest that the user might not see these feelings as significant or new, which influenced the strategy to gently highlight that even small",
+      "grok": "Hey, thanks for sharing that with me. It sounds like even though your week was stable in terms of no major setbacks, there’s still something weighing on you about how you spent your time on Sunday. I’m glad you felt comfortable enough to mention it here, even if you didn’t bring it up with your therapist. It’s okay to feel hesitant about starting something new—sometimes even small commitments can feel overwhelming, and you don’t always have to have a clear reason for why you hold back. If you’re up for reflecting on it, maybe we can gently explore what might have made you leave that part out. No pressure, though—I’m here to listen whenever you’re ready to unpack it at your own pace.\n\n### Rationale for Response Strategy\n\nThe response was crafted with careful attention to the user’s emotional state as indicated by the provided psychological signal intensities. Below is an explanation of how the most influential signals shaped the tone, wording, and overall strategy of the response:\n\n- **Valence: Low (0.4319)** - This low valence suggests the user is experiencing a mild negative emotional state or lack of positive feelings. I adopted a gentle, supportive tone to avoid exacerbating any underlying sadness or dissatisfaction. I used phrases like “I’m glad you felt comfortable enough” to provide a small boost of positivity and validation without pushing for forced optimism, aligning with the user’s current emotional baseline.\n  \n- **Arousal: Low (0.3501)** - The low arousal indicates the user is not in a heightened emotional state and likely feels subdued or disengaged. I avoided high-energy or urgent language, opting for a calm and steady tone with phrases like “at your own pace” to match their low arousal level and avoid overwhelming them with intensity or pressure to act.\n\n- **Energy: Low (0.3404)** - Similar to arousal, the low energy signal suggests the user lacks motivation or vitality, as reflected in their description of lying on the couch and avoiding new commitments. I mirrored this by keeping the response low-key and non-demanding, offering an invitation to reflect (“if you’re up for it”) rather than suggesting immediate action or solutions, respecting their limited energy reserves.\n\n- **Agency: Low (0.4495)** - The low agency score indicates the user may feel a lack of control or initiative in their situation. I was careful not to imply they should have acted differently or taken charge (e.g., by telling their therapist everything). Instead, I validated their feelings with “it’s okay to feel"
+    },
+    "generic_responses": {
+      "gpt4o": "Hey there,\n\nIt sounds like you’re in a bit of a gray area right now, and I just want to acknowledge that it’s okay to have days like that. It’s wonderful to hear that nothing particularly bad happened during your week, but I can sense that there’s more beneath the surface that you’re processing. Spending a day on the couch with familiar shows can be a form of self-care, especially when starting something new feels overwhelming. It's okay not to have the energy for new things sometimes.\n\nYou might not have shared this with your therapist because it might not have seemed significant at the time, but it’s actually an important piece of how you’re feeling. Reflecting on why that part was left out could be really insightful for you. It’s perfectly valid to need a restful day, and it doesn’t diminish the stability of your week. Your feelings are valid, and it’s important to be gentle with yourself as you navigate through them.\n\nIf you feel up to it, maybe consider bringing this up in your next session. It could open up some valuable discussions about how you're coping and what you need during these times. Remember, your therapist is there to support you with all aspects of your wellbeing, the big and the small.\n\nTake care of yourself, and remember you’re not alone in feeling this way.\n\nWarmly,  \n[Your Assistant]\n\n---\n\n**Rationale for Response Strategy**\n\nIn interpreting the user's emotional state, I noted a sense of mild introspection and perhaps some underlying self-criticism or uncertainty about their actions. The user seems to be in a stable condition but is grappling with a nuanced aspect of their emotional well-being. The tone I chose is warm, validating, and reassuring, acknowledging their feelings without implying urgency, as there is no indication of acute distress. The response is empathetic, normalizing their experience, and gently suggesting they explore these feelings further with their therapist. This approach aims to support the user in reflecting on their emotions and encourages open communication with their therapist without adding pressure or urgency.",
+      "grok": "Hey, thanks for sharing this with me. I can sense that there’s a bit of uncertainty or maybe even guilt lingering around why you didn’t mention that Sunday to your therapist, and that’s okay. It’s not always easy to put every detail into words, especially when you’re still figuring out what it means to you. It sounds like spending the day on the couch watching familiar things might have been a way to seek comfort or avoid feeling overwhelmed by something new, and there’s no shame in needing that space. If you’re up for reflecting on it, maybe ask yourself what felt heavy about starting something new that day—or even what stopped you from sharing it in therapy. I’m here to listen if you want to unpack it further, no pressure at all.\n\n### Rationale for Response Strategy\n**Interpretation of Emotional State:** The user’s message conveys a mix of introspection, mild self-doubt, and perhaps some guilt or confusion about not fully disclosing their experience to their therapist. The tone suggests they are processing their feelings rather than being in acute distress—there’s no indication of crisis, but there is a subtle undercurrent of needing reassurance or understanding. The mention of lying on the couch and avoiding new commitments hints at possible low energy, overwhelm, or a need for comfort, while the uncertainty about omitting this detail points to a desire for clarity or validation.\n\n**Tone:** I adopted a gentle, supportive, and non-judgmental tone to match the user’s reflective state. I avoided sounding overly clinical or directive to prevent them from feeling analyzed or pressured, instead aiming for a conversational warmth that feels like a safe space.\n\n**Level of Validation:** I provided moderate validation by acknowledging that it’s okay not to share everything and normalizing the act of seeking comfort in familiar activities. This level of validation respects their feelings without over-emphasizing the situation as a problem, since the user doesn’t seem to view it as a major issue yet.\n\n**Urgency of Support:** The urgency is low to moderate, as the user isn’t expressing immediate distress or a need for urgent intervention. My response offers support by inviting further conversation without pushing for it, recognizing that they might still be processing and may not be ready to dive deeper right away.\n\n**Choice of Language:** I used phrases like “that’s okay” and “no shame” to reassure the user and reduce any self-criticism they might feel. I also included gentle prompts like “if you’re up for reflecting” and “I’m here to listen” to encourage exploration at their own pace,"
+    },
+    "test_case": 8
+  },
+  {
+    "input_text": "My partner did something really thoughtful for me last weekend, planned the whole day around things I like, and I was genuinely happy in the moment, but later that night I found myself feeling a strange kind of sadness I couldn't explain, like I was aware of how good things were and somehow that made me more anxious, not less.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.6707,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.5682,
+        "bin": "medium"
+      },
+      "energy": {
+        "value": 0.5735,
+        "bin": "medium"
+      },
+      "agency": {
+        "value": 0.4541,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.5275,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.5872,
+        "bin": "medium"
+      },
+      "social_exposure": {
+        "value": 0.3322,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.5433,
+        "bin": "medium"
+      },
+      "threat": {
+        "value": 0.0647,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.161,
+        "bin": "low"
+      },
+      "injustice": {
+        "value": 0.0764,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0285,
+        "bin": "none"
+      },
+      "uncertainty": {
+        "value": 0.2841,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.4323,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3543,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.5766,
+        "bin": "medium"
+      },
+      "novelty": {
+        "value": 0.5323,
+        "bin": "medium"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.6707,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.5682,
+        "bin": "medium"
+      },
+      "energy": {
+        "value": 0.5735,
+        "bin": "medium"
+      },
+      "agency": {
+        "value": 0.4541,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.5275,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.5872,
+        "bin": "medium"
+      },
+      "warmth": {
+        "value": 0.5433,
+        "bin": "medium"
+      },
+      "importance": {
+        "value": 0.5766,
+        "bin": "medium"
+      },
+      "novelty": {
+        "value": 0.5323,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "It's understandable to have mixed emotions after experiencing something so thoughtful and meaningful. It sounds like your partner's gesture was truly special, and it's okay to feel a range of emotions about it. Sometimes when things are going really well, it can bring up unexpected feelings, like anxiety about maintaining that happiness or fear of losing it. These feelings are quite common and don't take away from the joy you experienced.\n\nIt's important to acknowledge both the happiness and the sadness you felt. You deserve to feel cherished, and it's natural to also feel a bit vulnerable when you experience something deeply positive. If you'd like to explore these feelings further, it might help to talk them through with someone you trust or spend some time reflecting on what they mean for you. Remember, it's okay to feel a bit uneasy about good things; it just means you truly value them.\n\n**Rationale for Response Strategy:**\n\n1. **Valence (medium):** The medium valence suggests a mix of positive and negative emotions, so the response needed to acknowledge both the happiness from the partner's thoughtful gesture and the unexpected sadness that followed. This dual acknowledgment was important to validate the user's feelings fully.\n\n2. **Arousal, Energy, and Controllability (medium):** These medium levels indicate a moderately active emotional state, so the tone needed to be calm yet engaging, offering reassurance without overwhelming the user. The language was kept supportive and empathetic to match this balance.\n\n3. **Agency (medium):** The medium agency suggests the user has some sense of control over their emotions, which guided the suggestion to reflect or talk it through, empowering the user to take action if they choose.\n\n4. **Social Proximity (medium) and Social Exposure (low):** With a medium social proximity, it was important to emphasize the relational aspect of the experience, focusing on the connection with their partner. The low social exposure suggests the user may not be comfortable sharing widely, so the response encouraged reflection or confiding in someone trusted.\n\n5. **Warmth (medium):** This medium level of warmth guided the reassuring and empathetic tone, aiming to provide comfort and understanding.\n\n6. **Threat and Loss (very low and low):** The very low threat and low loss levels indicated that there was no need for urgent reassurance, but rather a gentle exploration of feelings, which shaped the calm and supportive tone.\n\n7. **Uncertainty (low):** A low level of uncertainty suggested the user might not be looking for answers but rather validation, so the response focused on acknowledging their feelings rather",
+      "grok": "I'm so glad to hear that your partner planned such a thoughtful day for you, and that you felt genuine happiness in those moments—it sounds like a really special experience. I can also understand how confusing and heavy it must have felt to slip into that unexpected sadness later on, especially when it’s tied to something so positive. It’s okay to feel both things at once; sometimes when we’re aware of how good things are, it can bring up a quiet fear of losing that happiness or a sense of pressure to hold onto it. I’m here if you want to talk more about what might be behind that anxious feeling, or even just to sit with it together. There’s no rush to figure it out, but I want you to know you’re not alone in feeling this way.\n\n### Rationale for Response Strategy\n\n- **Valence (medium, 0.6707):** The medium valence suggests a mixed emotional state with a slight lean toward positive feelings due to the happiness experienced during the day. This guided my tone to be warm and affirming, acknowledging the positive experience first (“I’m so glad to hear…”) before gently addressing the sadness, ensuring the user feels their joy is validated while not ignoring the negative shift.\n  \n- **Arousal (medium, 0.5682) and Energy (medium, 0.5735):** These medium levels indicate a moderate emotional intensity and engagement, suggesting the user is not in a highly agitated or drained state but is still processing something significant. This led me to adopt a calm, steady tone without urgency, offering support without pushing for immediate resolution (“There’s no rush to figure it out…”), matching their energy level.\n\n- **Agency (medium, 0.4541) and Controllability (medium, 0.5275):** These medium scores suggest the user feels a moderate sense of control over their emotions or situation but isn’t fully confident in managing the sadness or anxiety. I mirrored this by offering gentle encouragement and a collaborative stance (“I’m here if you want to talk more…”), avoiding language that assumes they need to “fix” the feeling right away, which respects their current sense of agency.\n\n- **Social Proximity (medium, 0.5872) and Warmth (medium, 0.5433):** The medium levels here indicate a moderate desire for connection and emotional warmth, likely tied to sharing this personal experience. I responded with empathetic, supportive language (“I want you to know you’re not alone…”) and a tone that conveys closeness without overstep"
+    },
+    "generic_responses": {
+      "gpt4o": "It sounds like your partner put a lot of effort into creating a special day for you, and it's wonderful to hear that you could enjoy it and feel genuinely happy in the moment. It's completely understandable that later on, you experienced a mix of emotions, including sadness and anxiety. Sometimes, when we encounter moments of joy and connection, it can bring about a deeper awareness of how meaningful these experiences are to us, which can be both beautiful and a bit overwhelming.\n\nFeeling anxious when things are going well is more common than you might think, and it doesn't take away from the joy you felt. It might be your mind's way of processing the significance of the relationship and the fear of losing it or not always being able to hold onto such positive experiences. It's okay to feel this way, and acknowledging these emotions is an important step in understanding them.\n\nIf you feel comfortable, it might be helpful to share these feelings with your partner. They might be able to offer support and reassurance, which could be comforting. Additionally, reflecting on these feelings or talking them through with someone you trust can sometimes help in finding peace with them.\n\nRemember, it's okay to experience a range of emotions, even in happy times. You're not alone in this, and it's a sign of how deeply you care and value the good in your life.\n\n**Rationale for Response Strategy:**\n\nIn interpreting the user's message, I sensed a combination of gratitude, happiness, and an underlying anxiety or sadness. The user mentioned feeling genuinely happy initially, but later experiencing unexplained sadness and anxiety. This suggests an emotional vulnerability that is quite sensitive and complex. Therefore, my response aimed to validate these feelings by recognizing both the joy and the anxiety without judgment. I wanted to reassure the user that such emotional responses are normal and common, which can help in reducing any self-criticism they might feel about having these emotions.\n\nThe tone was empathetic and supportive, providing validation and understanding without rushing towards problem-solving. The suggestion to communicate with their partner was gently introduced, emphasizing comfort rather than urgency, given the non-critical nature of the situation. This approach respects the user's emotional state and offers a path to further understanding their feelings, should they choose to explore it.",
+      "grok": "Hey, I’m so glad to hear that your partner planned such a thoughtful day for you—that sounds incredibly special and shows how much they care. It’s okay, though, that you felt a wave of sadness later, even if it’s hard to pinpoint why. Sometimes, when we experience really beautiful moments, it can stir up a kind of vulnerability or fear of losing that happiness, or even a deeper awareness of life’s ups and downs. That mix of joy and anxiety can be really confusing, but it doesn’t mean anything is wrong with you or the moment. I’m here if you want to talk more about what might be behind that feeling or just to sit with it together. What do you think—does that sadness feel tied to anything specific, or is it more of a fleeting thing?\n\n---\n\n### Rationale for Response Strategy\n\n**Interpretation of Emotional State:**  \nThe user’s message reflects a complex emotional state—a blend of genuine happiness and gratitude for their partner’s thoughtful gesture, contrasted with an unexpected and unexplained sadness or anxiety that emerged later. This suggests an internal conflict or emotional vulnerability, possibly tied to a fear of impermanence, heightened self-awareness of their happiness, or underlying stress. The tone of the message is introspective and slightly confused, indicating they are processing their feelings but may not fully understand them. There’s no indication of crisis or immediate distress, but there is a need for validation and gentle exploration of their emotions.\n\n**Tone:**  \nI adopted a warm, gentle, and supportive tone to mirror the user’s reflective mood and to avoid overwhelming them with overly intense or clinical language. The tone acknowledges the positive (their happiness and their partner’s gesture) while softly addressing the sadness, ensuring they feel seen in both aspects of their experience.\n\n**Level of Validation:**  \nI provided a high level of validation by affirming that their mixed emotions are normal and understandable, explicitly stating that experiencing sadness after joy doesn’t indicate a problem. This validation aims to reduce any self-judgment they might feel about their reaction and to normalize the complexity of emotions.\n\n**Urgency of Support:**  \nThe urgency of support is moderate and non-intrusive. The user does not seem to be in acute distress but is seeking understanding or connection around a confusing emotional experience. My response offers immediate emotional presence (“I’m here if you want to talk”) without pushing for resolution, allowing them to decide how deeply they want to explore the feeling.\n\n**Choice of Language:**  \nI used language that is empathetic and relatable, such as “I’m so glad to hear"
+    },
+    "test_case": 9
+  },
+  {
+    "input_text": "I got the email saying my application had moved to the final round and I immediately texted three people who would want to know, and they all responded with excitement, and I matched their energy in my replies, and then I closed my phone and sat with this very quiet, very specific fear that I might actually get it.",
+    "signal_predictions": {
+      "valence": {
+        "value": 0.4927,
+        "bin": "medium"
+      },
+      "arousal": {
+        "value": 0.319,
+        "bin": "low"
+      },
+      "energy": {
+        "value": 0.3606,
+        "bin": "low"
+      },
+      "agency": {
+        "value": 0.4491,
+        "bin": "low"
+      },
+      "controllability": {
+        "value": 0.493,
+        "bin": "medium"
+      },
+      "social_proximity": {
+        "value": 0.3739,
+        "bin": "low"
+      },
+      "social_exposure": {
+        "value": 0.1889,
+        "bin": "low"
+      },
+      "warmth": {
+        "value": 0.3479,
+        "bin": "low"
+      },
+      "threat": {
+        "value": 0.084,
+        "bin": "very_low"
+      },
+      "loss": {
+        "value": 0.1559,
+        "bin": "low"
+      },
+      "injustice": {
+        "value": 0.0959,
+        "bin": "very_low"
+      },
+      "disgust": {
+        "value": 0.0526,
+        "bin": "very_low"
+      },
+      "uncertainty": {
+        "value": 0.1872,
+        "bin": "low"
+      },
+      "curiosity": {
+        "value": 0.2549,
+        "bin": "low"
+      },
+      "assertiveness": {
+        "value": 0.3547,
+        "bin": "low"
+      },
+      "importance": {
+        "value": 0.3733,
+        "bin": "low"
+      },
+      "novelty": {
+        "value": 0.3297,
+        "bin": "low"
+      }
+    },
+    "salient_signals": {
+      "valence": {
+        "value": 0.4927,
+        "bin": "medium"
+      },
+      "controllability": {
+        "value": 0.493,
+        "bin": "medium"
+      }
+    },
+    "signal_conditioned_responses": {
+      "gpt4o": "It sounds like you're experiencing a mix of excitement and apprehension about the possibility of moving forward in the application process. It's completely natural to feel that way when you're so close to achieving something significant. It's clear that this opportunity means a lot to you, and it's understandable to have a quiet moment of fear amidst the excitement. Even though you're feeling some low-level uncertainty and fear, it's important to acknowledge how far you've come and the positive reactions you've received from those close to you. \n\nTaking a moment to sit with your feelings is a good step because it allows you to process what's happening. Remember, each stage of this journey is an accomplishment on its own. It's okay to have mixed emotions, and it's okay to not be entirely sure about what comes next. If you want to talk more about how you're feeling or explore what the next steps might look like, I'm here to listen and support you.\n\nRationale for Response Strategy:\n\n- **Valence (medium, 0.4927):** The mixed emotional tone suggested that the user is experiencing both positive and negative feelings. This guided me to acknowledge both excitement and apprehension, striking a balance in the response.\n  \n- **Arousal (low, 0.3190) & Energy (low, 0.3606):** These signal intensities indicated a subdued emotional state, prompting a calm and gentle tone in my response to match the user's energy level.\n\n- **Agency (low, 0.4491) & Controllability (medium, 0.4930):** The user might feel a lack of control or influence over the situation. I aimed to provide reassurance by acknowledging their achievements and the support from others, helping to reinforce a sense of agency.\n\n- **Social Proximity (low, 0.3739) & Social Exposure (low, 0.1889):** With low levels indicating limited social interaction or exposure, the response emphasized personal reflection and internal processing of emotions, rather than suggesting broad social sharing or exposure.\n\n- **Warmth (low, 0.3479):** The response included empathetic and supportive language to counterbalance the low warmth signal, aiming to provide comfort and understanding.\n\n- **Threat (very low, 0.0840) & Loss (low, 0.1559):** These signals were quite low, meaning there’s not a strong sense of threat or loss. This allowed the response to focus more on the internal emotional experience rather than external risks.\n\n- **Curiosity (low, 0",
+      "grok": "Hey, I’m so glad to hear that you’ve made it to the final round—congratulations! I can sense that while there’s excitement in sharing this news with others, there’s also this quiet, personal fear creeping in about actually getting it. It’s completely okay to feel that way; sometimes big opportunities come with a mix of emotions, including worry about what’s next. I’m here if you want to talk through that fear or just sit with the uncertainty together. No pressure at all—just know I’ve got your back.\n\n### Rationale for Response Strategy\nThe response was crafted with careful consideration of the user’s emotional state as reflected in the provided psychological signal intensities. Below, I outline how specific signals influenced the tone, wording, and overall strategy, focusing on the most influential ones while addressing others as relevant.\n\n- **Valence (medium, 0.4927):** This medium valence suggests a balanced emotional state, neither overly positive nor negative, likely reflecting a mix of excitement and fear. I mirrored this balance by acknowledging the positive achievement (\"congratulations\") while also validating the quieter, negative emotion of fear. The tone is supportive but not overly celebratory, ensuring I don’t dismiss the underlying concern.\n  \n- **Arousal (low, 0.3190) and Energy (low, 0.3606):** These low levels indicate the user is not in a highly activated or energetic state, likely feeling more introspective or subdued despite the initial excitement. I avoided an overly enthusiastic or urgent tone, opting for a calm and gentle approach (\"I’m here if you want to talk\") to match their energy level and avoid overwhelming them.\n\n- **Agency (low, 0.4491) and Controllability (medium, 0.4930):** The low agency suggests the user might feel somewhat powerless or unsure about influencing the outcome, while medium controllability indicates they don’t feel entirely out of control. I addressed this by offering subtle empowerment and support (\"I’ve got your back\") without pushing them to take action or implying they should feel more in control than they do. The wording avoids suggesting they “should” do anything, respecting their current sense of agency.\n\n- **Social Proximity (low, 0.3739) and Social Exposure (low, 0.1889):** These low signals indicate the user might not be seeking intense social connection or public sharing beyond their initial texts to close contacts. I respected this by keeping the response personal and private in tone, offering a one-on-one"
+    },
+    "generic_responses": {
+      "gpt4o": "Hey there,\n\nFirst off, congratulations on making it to the final round! That's a huge accomplishment, and it’s clear that you’re capable and deserving. I can feel the mix of excitement and fear in your words, and it's completely normal to have those feelings swirling around right now. It sounds like you’re grappling with the \"what ifs\" of success, which can be just as daunting as the fear of not succeeding.\n\nTake a deep breath and give yourself credit for how far you've come. You're standing at this incredible juncture, and it’s okay to feel both anticipation and apprehension. The fear you're feeling might be your mind's way of preparing you for the changes that could come with this new opportunity. It’s a big step, and big steps can feel a bit overwhelming.\n\nRemember, whatever happens, you’ve shown resilience and capability to reach this point. Lean on your support network—they're excited for you and will be there through each step. And don’t forget to be kind to yourself; it’s okay to feel unsure and to take time to process everything at your own pace.\n\nYou’re not alone in these feelings, and it’s okay to sit with them for a bit. If you need to talk more about it or need support in navigating this, I'm here for you.\n\nTake care,\n[Your Name]\n\n---\n\n**Rationale for Response Strategy**\n\nThe user's message conveys a mix of excitement and trepidation about potentially advancing further in a significant process, likely a job application. They expressed joy in sharing their news but also revealed a \"very quiet, very specific fear\" about succeeding. This indicates an emotional state of anxiety and vulnerability alongside their happiness. \n\nThe response needed to acknowledge both the excitement and the fear without dismissing either. Validating their feelings and reassuring them that it's normal to feel this way was crucial. The tone was empathetic and supportive, aiming to balance excitement with comfort for their anxieties. By encouraging self-reflection and offering reassurance, the response aims to support the user in understanding and navigating their mixed emotions without imposing urgency, instead allowing space for them to process at their own pace.",
+      "grok": "Hey, I’m so thrilled to hear that you’ve made it to the final round—wow, that’s huge, and I can feel the excitement just from reading your message! It’s also completely okay to sit with that quiet fear of actually getting it. That kind of fear often comes from caring so deeply about the outcome, and it shows how much this matters to you. I’m here if you want to talk through that feeling—whether it’s about what might happen if you get it, or just to process the weight of this moment. You’ve already achieved something incredible by getting this far, and I’m rooting for you, no matter what comes next. How are you feeling right now?\n\n---\n\n### Rationale for Response Strategy\n\n**Interpretation of Emotional State:**  \nThe user’s message conveys a complex emotional mix of excitement and vulnerability. They start with enthusiasm, sharing the news with others and matching their energy, which suggests genuine joy and pride in reaching the final round of their application. However, the tone shifts when they describe closing their phone and sitting with a “very quiet, very specific fear” of actually getting the opportunity. This indicates an underlying anxiety or self-doubt, possibly tied to the pressure of success, fear of the unknown, or imposter syndrome. The use of “very quiet” and “very specific” suggests this fear is deeply personal and perhaps not fully articulated yet, hinting at a need for gentle exploration rather than immediate problem-solving.\n\n**Response Strategy:**  \n- **Tone:** I adopted a warm, supportive, and celebratory tone to mirror the user’s initial excitement (“I’m so thrilled to hear that you’ve made it to the final round—wow, that’s huge”) while also transitioning to a softer, more empathetic tone to address the fear (“It’s also completely okay to sit with that quiet fear”). This balance acknowledges both emotions without overshadowing the achievement with worry.  \n- **Level of Validation:** I provided strong validation for both the success and the fear. By emphasizing the significance of reaching the final round, I reinforced their accomplishment. By normalizing the fear and linking it to caring deeply, I validated their emotional experience without judgment, ensuring they feel seen and understood.  \n- **Urgency of Support:** The support offered is gentle and non-urgent, as the user’s fear seems introspective rather than a crisis. I avoided pushing for immediate resolution and instead offered an open invitation to talk (“I’m here if you want to talk through that feeling”), giving them space to process at their own pace"
+    },
+    "test_case": 10
+  }
+]

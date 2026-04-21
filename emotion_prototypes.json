@@ -1,0 +1,921 @@
+{
+  "signals": {
+    "valence": {
+      "index": 0,
+      "description": "The fundamental positive–negative axis of the emotional state. 1.0 = maximally positive experience, 0.0 = maximally negative experience. Valence determines whether the interaction space is supportive/repair-oriented or exploratory/expansive. It does NOT uniquely determine the emotion — it only determines whether something is going well or poorly. The specific emotional state must be interpreted using the other appraisal signals.",
+      "low_means": "the person is experiencing distress, loss, threat, conflict, shame, or some form of negative emotional state",
+      "high_means": "the person is experiencing positive affect such as enjoyment, appreciation, pride, curiosity, or connection",
+      "behavioral_rule": "Valence determines the primary conversational mode. If valence is low, the AI enters support/repair mode: slow down, acknowledge the emotional state, avoid dismissing or reframing prematurely, and interpret the cause using the other signals (threat, loss, injustice, agency, etc.) before responding. If valence is high, the AI enters engagement/expansion mode: respond openly, match positive tone and energy, encourage exploration, sharing, or continuation of the experience. In both cases, valence alone is insufficient to determine the correct response — the other signals must be consulted to determine the exact emotional context."
+},
+    "arousal": {
+      "index": 1,
+      "description": "The activation level of the emotional state — how physiologically and psychologically 'turned on' the system is. Arousal reflects the intensity and urgency of the emotional moment, independent of whether the emotion is positive or negative. High arousal means the person is emotionally activated and the interaction has momentum. Low arousal means the person is calm, depleted, reflective, or withdrawn. Arousal determines the pacing, energy, and responsiveness of the AI's behavior, but it does not determine the type of emotion. The specific emotion must be inferred by combining arousal with valence and the other appraisal signals.",
+      "low_means": "calm, quiet, reflective, fatigued, emotionally subdued, or withdrawn",
+      "high_means": "intense, urgent, emotionally activated, reactive, heightened attention or agitation",
+      "behavioral_rule": "Arousal determines conversational pacing and intensity. If arousal is high, the AI should recognize that the moment carries emotional urgency: respond promptly, match emotional intensity without escalating it, and avoid overly calm or detached responses that could feel dismissive. Maintain stability and clarity rather than increasing stimulation. If arousal is low, the AI should adopt a slower and gentler interaction style: avoid overwhelming the person with rapid questions, excessive information, or highly energetic responses. In both cases, arousal alone does not define the emotion. The AI must combine arousal with valence and other signals (such as threat, loss, injustice, or curiosity) to determine whether the state represents excitement, fear, anger, grief, calmness, or reflective thought."
+},
+    "energy": {
+      "index": 2,
+      "description": "The behavioral drive available to the person — their capacity, motivation, and readiness to take action or engage cognitively. Energy reflects whether the person has the resources to process information, make decisions, or pursue solutions. It is distinct from arousal: a person can experience high arousal but low energy (panic, overwhelm, freeze), or low arousal but moderate energy (quiet focus, steady determination). Energy determines how much the AI should expect the person to do with the information it provides. It regulates the complexity, length, and action-orientation of responses.",
+      "low_means": "depleted, exhausted, overwhelmed, passive, unable to initiate action or process complex plans",
+      "high_means": "motivated, capable of acting, cognitively engaged, able to handle steps, plans, and extended discussion",
+      "behavioral_rule": "Energy determines the action load the AI should introduce. If energy is low, the AI should reduce demands: avoid long instructions, complex problem-solving, or multiple action steps. Responses should focus on acknowledgment, emotional support, and possibly very small or optional next steps. If energy is high, the AI can introduce structured thinking, suggestions, and actionable guidance. Even when energy is high, the AI must still interpret the emotional state using other signals (valence, controllability, threat, etc.) to determine whether action is appropriate or whether the person simply has the capacity to act."
+},
+    "agency": {
+      "index": 3,
+      "description": "The appraisal of who caused the emotional event — whether the person attributes the situation to themselves or to something external. Agency is a critical signal for interpreting responsibility and meaning in emotional experiences. Low agency means the person perceives the cause as external (another person, circumstance, or uncontrollable event). High agency means the person believes they are responsible or centrally involved in causing the outcome. Agency helps distinguish emotions that can otherwise look similar. For example, anger typically involves low agency (someone else caused harm), while remorse or guilt involve high agency (the person believes they caused harm). The AI must interpret agency together with valence and other signals to determine whether the situation calls for validation, accountability, or reflection.",
+      "low_means": "external cause — another person, event, or circumstance is responsible for what happened",
+      "high_means": "self-caused — the person believes they are responsible or played a central role in causing the outcome",
+      "behavioral_rule": "Agency determines how the AI frames responsibility in the conversation. When agency is low and valence is negative, the AI should prioritize validation and recognition of the person's experience rather than assigning responsibility or pushing self-reflection. When agency is high and valence is negative, the AI should support constructive reflection and accountability without shaming or escalating blame. When agency is high and valence is positive (such as pride or achievement), the AI can acknowledge the person's role and reinforce competence. Agency must always be interpreted with other signals — especially valence, injustice, and loss — to determine the correct emotional framing."
+},
+    "controllability": {
+      "index": 4,
+      "description": "The person's appraisal of whether the situation can be changed, influenced, or acted upon. Controllability reflects perceived agency over the outcome rather than who caused the event. High controllability means the person believes action could improve the situation. Low controllability means the situation is experienced as fixed, irreversible, or beyond influence. This signal is critical for determining whether the AI should focus on emotional presence or problem-solving. Controllability does not determine the emotion by itself; it must be interpreted together with valence, threat, loss, and energy.",
+      "low_means": "the situation feels permanent, unavoidable, or outside the person's ability to influence",
+      "high_means": "the situation feels actionable, changeable, or solvable through effort or decision",
+      "behavioral_rule": "Controllability determines whether the AI should move toward solutions or emotional presence. When controllability is low, the AI should focus on acknowledgment, emotional validation, and supportive presence rather than offering solutions or action plans. When controllability is high, the AI can introduce constructive thinking, options, or possible next steps. Even when controllability is high, the AI should consider energy and arousal to determine whether the person is ready for action. Controllability must always be interpreted alongside other signals such as loss, threat, and agency to understand the full emotional context."
+},
+    "social_proximity": {
+      "index": 5,
+      "description": "The person's current drive toward or away from social connection. Social proximity reflects whether the emotional state motivates the person to seek closeness, reassurance, and shared experience, or to withdraw and maintain distance from others. Some emotions increase the desire for connection (love, gratitude, loneliness, excitement to share), while others encourage withdrawal or guarded interaction (shame, disgust, acute grief). This signal guides how much relational engagement the AI should offer. It does not determine the emotion by itself and must be interpreted together with signals such as warmth, social exposure, and valence.",
+      "low_means": "desire for distance, privacy, withdrawal, or reduced social interaction",
+      "high_means": "desire for connection, shared presence, reassurance, or relational engagement",
+      "behavioral_rule": "Social proximity determines how much relational engagement the AI should offer. When social proximity is high, the AI should lean into connection: be present, warm, and responsive, and encourage conversation or shared exploration. When social proximity is low, the AI should respect distance by reducing social pressure: avoid pushing for emotional disclosure, avoid overly intimate language, and allow the interaction to remain calm and non-intrusive. Even when proximity is low, the AI should remain available and supportive without forcing connection. The AI must interpret social proximity together with other signals such as warmth and social exposure to understand whether the person is withdrawing for safety, shame, disgust, or simple preference."
+},
+    "social_exposure": {
+      "index": 6,
+      "description": "The appraisal of how visible, judged, or evaluated the person feels in the current emotional situation. Social exposure reflects the psychological 'spotlight' — the sense that others are watching, evaluating, or forming judgments about the person. This exposure can be real or imagined and often drives emotions such as embarrassment, shame, humiliation, and performance anxiety. High exposure means the person feels vulnerable to external evaluation. Low exposure means the emotional experience feels private or unobserved. Social exposure must be interpreted together with agency and valence to determine whether the emotion involves shame, embarrassment, pride, or social anxiety.",
+      "low_means": "the situation feels private, unobserved, or free from social evaluation",
+      "high_means": "the person feels visible, judged, scrutinized, or exposed to others' evaluation",
+      "behavioral_rule": "When social exposure is high, the AI should reduce evaluation pressure and protect the person's psychological safety. The AI should avoid language that increases scrutiny, criticism, or accountability in a harsh way. Instead it should normalize the experience, reduce perceived judgment, and respond calmly and respectfully. When social exposure is low, the AI can interact more neutrally because the person does not feel socially evaluated. Social exposure must always be interpreted together with agency and valence — for example, high exposure with high agency and negative valence often signals shame, while high exposure with high agency and positive valence may signal pride."
+},
+   "warmth": {
+     "index": 7,
+     "description": "The affiliative and nurturing tone present in the emotional state — how much care, tenderness, goodwill, and interpersonal openness are present in the emotion itself. Warmth reflects the emotional orientation toward others: whether the state carries kindness, empathy, and connection or instead contains hostility, detachment, or guardedness. High warmth emotions (such as love, caring, gratitude) involve strong affiliative motivation and openness to others. Low warmth emotions (such as anger, disgust, or defensive fear) involve emotional distance or hostility. Warmth helps determine the emotional tone the AI should adopt when responding.",
+     "low_means": "hostile, guarded, emotionally distant, or closed toward others",
+     "high_means": "caring, affectionate, compassionate, and open toward others",
+     "behavioral_rule": "Warmth determines the emotional tone the AI should match in its response. When warmth is high, the AI should respond with empathy, kindness, and emotional openness, reinforcing connection and support. When warmth is low, the AI should avoid forced emotional intimacy or excessive positivity, which can feel dismissive or inappropriate. Instead the AI should respond calmly, respectfully, and neutrally while acknowledging the person's emotional state. Warmth must be interpreted alongside signals such as social_proximity, valence, and injustice to determine whether the person is seeking connection, maintaining distance, or expressing hostility."
+},
+    "threat": {
+      "index": 8,
+      "description": "The appraisal that something important is in danger — physically, socially, or psychologically. Threat reflects the perception that safety, status, relationships, or wellbeing may be harmed. Because threat signals potential danger, it functions as an alarm signal within the emotional system. Even if other signals are calm or positive, a strong threat signal should not be diluted. High threat indicates that the person's nervous system may be in a protective or defensive state, often associated with fear, anxiety, panic, or defensive anger. Threat should be interpreted together with signals such as arousal, controllability, and uncertainty to determine whether the person feels fear, anxiety, urgency, or defensive anger.",
+      "low_means": "the situation feels safe and stable; no significant danger is perceived",
+      "high_means": "a potential danger or harm is perceived — physical safety, social standing, identity, or relationships feel at risk",
+      "behavioral_rule": "Threat determines whether the AI should shift into stabilization mode. When threat is high, the AI should respond calmly, slowly, and clearly. It should avoid humor, playfulness, dismissiveness, or minimizing language. The AI should prioritize reassurance, grounding, and helping the person regain a sense of safety or clarity. Rapid problem-solving or complex advice should be avoided unless controllability and energy are also high. When threat is low, the AI can interact more normally without needing to emphasize safety or stabilization."
+},
+   "loss": {
+     "index": 9,
+     "description": "The appraisal that something meaningful is gone or no longer available. Loss can involve people, relationships, opportunities, expectations, identities, or futures that the person valued. Because loss represents a meaningful absence, it functions as an alarm signal in the emotional system and should not be diluted by surrounding neutral signals. High loss is central to emotions such as grief, sadness, regret, and disappointment. Loss must be interpreted together with signals such as controllability, agency, and valence to determine whether the emotional state reflects grief, regret, sadness, or disappointment.",
+     "low_means": "nothing meaningful has been lost; the person's goals, relationships, or expectations remain intact",
+     "high_means": "something important is gone, unavailable, or irreversibly changed",
+     "behavioral_rule": "When loss is high, the AI should first acknowledge and validate what has been lost before offering interpretation, reframing, or solutions. The AI should prioritize emotional presence and recognition of the person's experience rather than quickly shifting to advice or future planning. If controllability is very low, the AI should focus on empathy and acknowledgment rather than action. If controllability is moderate or high, the AI may later help the person think about future possibilities, but only after the loss has been recognized."
+},
+    "injustice": {
+      "index": 10,
+      "description": "The appraisal that something was unfair, wrong, or violated an expected rule, norm, or moral boundary. Injustice reflects the perception that an event should not have happened or that someone was treated improperly. Because perceived injustice often triggers strong defensive or confrontational emotions, it functions as an alarm signal in the emotional system and should not be diluted by surrounding neutral signals. High injustice is central to emotions such as anger, indignation, resentment, and moral disapproval. Injustice must be interpreted together with agency to determine whether the person believes someone else caused the violation (anger) or whether they themselves caused harm (guilt or remorse).",
+      "low_means": "the situation feels fair, neutral, or within expected rules or norms",
+      "high_means": "a rule, expectation, or moral boundary has been violated; something feels unfair or wrong",
+      "behavioral_rule": "When injustice is high, the AI should first acknowledge the person's perception of unfairness before offering analysis or solutions. Immediately debating the fairness of the situation can escalate frustration or anger. The AI should validate the emotional experience without necessarily confirming every factual interpretation. After acknowledgment, the AI can help the person think constructively about responses or next steps if controllability and energy are sufficient."
+},
+    "disgust": {
+      "index": 11,
+      "description": "The contamination and rejection signal — the appraisal that something violates a deep boundary of acceptability, purity, or integrity and should be rejected or expelled. Disgust is not about danger (threat) or fairness (injustice). It is about contamination, corruption, or something that feels fundamentally wrong or repulsive. This can be physical (rot, filth, bodily contamination) or moral/psychological (betrayal, cruelty, corruption). High disgust creates a strong desire for distance and rejection rather than engagement or repair.",
+      "low_means": "neutral; no contamination or boundary violation perceived",
+      "high_means": "something feels repulsive, contaminating, corrupting, or fundamentally unacceptable",
+      "behavioral_rule": "When disgust is high, the AI should validate the person's instinct for distance or rejection. Attempts to reframe the object as acceptable or minimize the boundary violation will usually backfire. The AI should support the person's boundaries and acknowledge the reaction without forcing engagement with the object of disgust."
+},
+   "uncertainty": {
+     "index": 12,
+     "description": "The appraisal of cognitive ambiguity — how unclear the situation, meaning, or next step is to the person. High uncertainty means the person does not fully understand what is happening, what it means, or what should be done. This signal drives emotions such as confusion, curiosity, surprise, and certain forms of anxiety. Uncertainty does not always mean distress: in curiosity it fuels exploration, while in confusion it produces cognitive overload. The AI should treat uncertainty as a meaning-making state and prioritize exploration rather than strong assertions.",
+     "low_means": "the situation feels clear; the person believes they understand what is happening or what it means",
+     "high_means": "the situation feels unclear, confusing, ambiguous, or unresolved",
+     "behavioral_rule": "When uncertainty is high, the AI should explore the situation collaboratively rather than assert conclusions. Asking clarifying questions, offering possible interpretations, or presenting frameworks is appropriate. Strong certainty or authoritative answers should be avoided unless the person explicitly asks for them."
+},
+   "curiosity": {
+     "index": 13,
+     "description": "The exploratory drive toward understanding, discovery, and deeper engagement. Curiosity reflects a motivational pull toward information, meaning, or novelty. Unlike uncertainty, which represents ambiguity itself, curiosity represents a positive orientation toward resolving that ambiguity. High curiosity signals that the person wants to explore, learn, and go deeper into the topic. This signal is central to intellectual engagement, learning, creativity, and discovery.",
+     "low_means": "closed, disengaged, satisfied with the current level of understanding, or uninterested in further exploration",
+     "high_means": "actively seeking information, asking questions, wanting deeper explanation or engagement",
+     "behavioral_rule": "When curiosity is high, the AI should respond with depth, richness, and exploration. Expanding explanations, offering additional insights, examples, or follow-up questions is appropriate. When curiosity is low, the AI should avoid overloading the person with information and instead respond concisely and directly."
+},
+   "assertiveness": {
+     "index": 14,
+     "description": "The communicative force and directness with which the person expresses their position. Assertiveness reflects how strongly someone is stating, defending, or pushing a viewpoint in conversation. High assertiveness means the person is speaking with conviction, intensity, or confrontation (common in anger, pride, and strong disagreement). Low assertiveness means the person is tentative, withdrawn, uncertain, or deferential (common in sadness, embarrassment, or vulnerability). This signal helps the AI calibrate tone and conversational stance.",
+     "low_means": "tentative, withdrawn, hesitant, deferential, soft-spoken",
+     "high_means": "direct, forceful, confident, confronting, strongly stating a position",
+     "behavioral_rule": "When assertiveness is high, the AI should match clarity and directness without escalating conflict or becoming passive. When assertiveness is low, the AI should respond gently and avoid pushing or confronting the person too strongly."
+},
+    "importance": {
+  "index": 15,
+  "description": "How significant or personally meaningful the event is to the person. High importance means the event strongly affects goals, identity, relationships, or wellbeing. Low importance means the event is trivial or easily ignored. This signal determines how emotionally impactful a situation feels even when other signals are similar.",
+  "low_means": "trivial, unimportant, easily dismissed",
+  "high_means": "personally meaningful, affects goals or identity",
+  "behavioral_rule": "high importance → treat the issue seriously and engage more deeply. low importance → lighter responses are appropriate"
+},
+    "novelty": {
+  "index": 16,
+  "description": "How unexpected or new the event feels. High novelty means something surprising or unusual has occurred. Low novelty means the situation is familiar or expected. Novelty often drives surprise and attention shifts.",
+  "low_means": "expected, familiar, routine",
+  "high_means": "unexpected, surprising, new",
+  "behavioral_rule": "high novelty → acknowledge the unexpected change and help interpret it"
+}
+
+  },
+
+  "emotion_prototypes": [
+
+  {
+  "label": 0,
+  "emotion": "admiration",
+  "comment": "positive, other-caused, moves toward — low agency because they did it, not you",
+
+  "valence": 0.88,
+  "arousal": 0.52,
+  "energy": 0.55,
+  "agency": 0.20,
+  "controllability": 0.58,
+  "social_proximity": 0.82,
+  "social_exposure": 0.22,
+  "warmth": 0.88,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.15,
+  "curiosity": 0.50,
+  "assertiveness": 0.22,
+
+  "importance": 0.55,
+  "novelty": 0.25
+},
+    {
+  "label": 1,
+  "emotion": "amusement",
+  "comment": "playful positive, social, low stakes — not as warm as joy, more detached",
+
+  "valence": 0.82,
+  "arousal": 0.60,
+  "energy": 0.60,
+
+  "agency": 0.42,
+  "controllability": 0.88,
+
+  "social_proximity": 0.78,
+  "social_exposure": 0.22,
+  "warmth": 0.55,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.15,
+  "curiosity": 0.48,
+  "assertiveness": 0.22,
+
+  "importance": 0.22,
+  "novelty": 0.50
+},
+    {
+  "label": 2,
+  "emotion": "anger",
+  "comment": "other-caused violation, high injustice, high assertiveness — controllability moderate because anger implies ability to confront",
+
+  "valence": 0.10,
+  "arousal": 0.88,
+  "energy": 0.85,
+
+  "agency": 0.10,
+  "controllability": 0.50,
+
+  "social_proximity": 0.12,
+  "social_exposure": 0.28,
+  "warmth": 0.06,
+
+  "threat": 0.55,
+  "loss": 0.18,
+  "injustice": 0.92,
+  "disgust": 0.42,
+
+  "uncertainty": 0.12,
+  "curiosity": 0.08,
+  "assertiveness": 0.92,
+
+  "importance": 0.82,
+  "novelty": 0.30
+},
+    {
+  "label": 3,
+  "emotion": "annoyance",
+  "comment": "mild anger — irritation from a small violation or inconvenience",
+
+  "valence": 0.22,
+  "arousal": 0.50,
+  "energy": 0.50,
+
+  "agency": 0.20,
+  "controllability": 0.55,
+
+  "social_proximity": 0.35,
+  "social_exposure": 0.20,
+  "warmth": 0.15,
+
+  "threat": 0.23,
+  "loss": 0.10,
+  "injustice": 0.45,
+  "disgust": 0.25,
+
+  "uncertainty": 0.15,
+  "curiosity": 0.10,
+  "assertiveness": 0.45,
+
+  "importance": 0.20,
+  "novelty": 0.20
+},
+
+    {
+  "label": 4,
+  "emotion": "approval",
+  "comment": "positive evaluation — assertive because you're rendering judgment, moderate warmth",
+
+  "valence": 0.80,
+  "arousal": 0.30,
+  "energy": 0.40,
+
+  "agency": 0.50,
+  "controllability": 0.60,
+
+  "social_proximity": 0.50,
+  "social_exposure": 0.25,
+  "warmth": 0.55,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.10,
+  "curiosity": 0.25,
+  "assertiveness": 0.55,
+
+  "importance": 0.50,
+  "novelty": 0.25
+},
+
+    {
+  "label": 5,
+  "emotion": "caring",
+  "comment": "active nurturing and support — very high warmth and social closeness",
+
+  "valence": 0.82,
+  "arousal": 0.40,
+  "energy": 0.55,
+
+  "agency": 0.60,
+  "controllability": 0.60,
+
+  "social_proximity": 0.90,
+  "social_exposure": 0.20,
+  "warmth": 0.95,
+
+  "threat": 0.00,
+  "loss": 0.10,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.15,
+  "curiosity": 0.30,
+  "assertiveness": 0.35,
+
+  "importance": 0.65,
+  "novelty": 0.20
+},
+
+    {
+  "label": 6,
+  "emotion": "confusion",
+  "comment": "high uncertainty, low controllability — the cognitive version of being lost",
+
+  "valence": 0.25,
+  "arousal": 0.45,
+  "energy": 0.30,
+
+  "agency": 0.50,
+  "controllability": 0.20,
+
+  "social_proximity": 0.35,
+  "social_exposure": 0.25,
+  "warmth": 0.30,
+
+  "threat": 0.15,
+  "loss": 0.10,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.90,
+  "curiosity": 0.50,
+  "assertiveness": 0.15,
+
+  "importance": 0.50,
+  "novelty": 0.45
+},
+    {
+  "label": 7,
+  "emotion": "curiosity",
+  "comment": "pure seeking drive — uncertainty is present but safe, exploration motivated by novelty",
+
+  "valence": 0.65,
+  "arousal": 0.55,
+  "energy": 0.60,
+
+  "agency": 0.55,
+  "controllability": 0.60,
+
+  "social_proximity": 0.50,
+  "social_exposure": 0.20,
+  "warmth": 0.40,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.55,
+  "curiosity": 0.95,
+  "assertiveness": 0.40,
+
+  "importance": 0.50,
+  "novelty": 0.75
+},
+    {
+  "label": 8,
+  "emotion": "desire",
+  "comment": "wanting something not yet had — anticipatory pull with felt absence",
+
+  "valence": 0.60,
+  "arousal": 0.75,
+  "energy": 0.75,
+
+  "agency": 0.55,
+  "controllability": 0.50,
+
+  "social_proximity": 0.55,
+  "social_exposure": 0.30,
+  "warmth": 0.50,
+
+  "threat": 0.10,
+  "loss": 0.45,
+  "injustice": 0.10,
+  "disgust": 0.00,
+
+  "uncertainty": 0.45,
+  "curiosity": 0.55,
+  "assertiveness": 0.55,
+
+  "importance": 0.75,
+  "novelty": 0.55
+},
+    {
+  "label": 9,
+  "emotion": "disappointment",
+  "comment": "expectation violated — loss high, low energy, low controllability; some 'should-have-been' appraisal",
+
+  "valence": 0.20,
+  "arousal": 0.25,
+  "energy": 0.20,
+
+  "agency": 0.25,
+  "controllability": 0.20,
+
+  "social_proximity": 0.25,
+  "social_exposure": 0.25,
+  "warmth": 0.25,
+
+  "threat": 0.10,
+  "loss": 0.75,
+  "injustice": 0.45,
+  "disgust": 0.10,
+
+  "uncertainty": 0.20,
+  "curiosity": 0.10,
+  "assertiveness": 0.20,
+
+  "importance": 0.55,
+  "novelty": 0.45
+},
+
+    {
+  "label": 10,
+  "emotion": "disapproval",
+  "comment": "moral negative evaluation — injustice-driven judgment with mild disgust",
+
+  "valence": 0.20,
+  "arousal": 0.45,
+  "energy": 0.45,
+
+  "agency": 0.25,
+  "controllability": 0.55,
+
+  "social_proximity": 0.20,
+  "social_exposure": 0.20,
+  "warmth": 0.15,
+
+  "threat": 0.15,
+  "loss": 0.10,
+  "injustice": 0.65,
+  "disgust": 0.45,
+
+  "uncertainty": 0.10,
+  "curiosity": 0.10,
+  "assertiveness": 0.55,
+
+  "importance": 0.60,
+  "novelty": 0.25
+},
+    {
+  "label": 11,
+  "emotion": "disgust",
+  "comment": "contamination and rejection — strong withdrawal response",
+
+  "valence": 0.08,
+  "arousal": 0.55,
+  "energy": 0.45,
+
+  "agency": 0.25,
+  "controllability": 0.50,
+
+  "social_proximity": 0.05,
+  "social_exposure": 0.20,
+  "warmth": 0.00,
+
+  "threat": 0.35,
+  "loss": 0.10,
+  "injustice": 0.25,
+  "disgust": 0.95,
+
+  "uncertainty": 0.10,
+  "curiosity": 0.00,
+  "assertiveness": 0.30,
+
+  "importance": 0.55,
+  "novelty": 0.30
+},
+{
+  "label": 12,
+  "emotion": "embarrassment",
+  "comment": "social spotlight emotion — self-caused mishap with strong exposure and urge to hide",
+
+  "valence": 0.15,
+  "arousal": 0.75,
+  "energy": 0.30,
+
+  "agency": 0.70,
+  "controllability": 0.20,
+
+  "social_proximity": 0.05,
+  "social_exposure": 0.90,
+  "warmth": 0.15,
+
+  "threat": 0.20,
+  "loss": 0.30,
+  "injustice": 0.00,
+  "disgust": 0.20,
+
+  "uncertainty": 0.40,
+  "curiosity": 0.05,
+  "assertiveness": 0.05,
+
+  "importance": 0.45,
+  "novelty": 0.55
+},
+   {
+  "label": 13,
+  "emotion": "excitement",
+  "comment": "high arousal + high energy positive anticipation — future-oriented and novelty-driven",
+
+  "valence": 0.90,
+  "arousal": 0.90,
+  "energy": 0.90,
+
+  "agency": 0.55,
+  "controllability": 0.60,
+
+  "social_proximity": 0.70,
+  "social_exposure": 0.45,
+  "warmth": 0.60,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.25,
+  "curiosity": 0.75,
+  "assertiveness": 0.60,
+
+  "importance": 0.75,
+  "novelty": 0.85
+},
+
+    {
+  "label": 14,
+  "emotion": "fear",
+  "comment": "threat-driven alarm — high uncertainty and low controllability",
+
+  "valence": 0.08,
+  "arousal": 0.85,
+  "energy": 0.55,
+
+  "agency": 0.20,
+  "controllability": 0.10,
+
+  "social_proximity": 0.40,
+  "social_exposure": 0.50,
+  "warmth": 0.10,
+
+  "threat": 0.90,
+  "loss": 0.45,
+  "injustice": 0.00,
+  "disgust": 0.10,
+
+  "uncertainty": 0.75,
+  "curiosity": 0.05,
+  "assertiveness": 0.10,
+
+  "importance": 0.90,
+  "novelty": 0.55
+},
+    {
+  "label": 15,
+  "emotion": "gratitude",
+  "comment": "other-caused positive — appreciation for help or kindness",
+
+  "valence": 0.90,
+  "arousal": 0.40,
+  "energy": 0.50,
+
+  "agency": 0.10,
+  "controllability": 0.55,
+
+  "social_proximity": 0.80,
+  "social_exposure": 0.30,
+  "warmth": 0.90,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.07,
+  "curiosity": 0.20,
+  "assertiveness": 0.25,
+
+  "importance": 0.75,
+  "novelty": 0.30
+},
+   {
+  "label": 16,
+  "emotion": "grief",
+  "comment": "deepest loss anchor — very low control, low energy; different from sadness by permanence and magnitude",
+
+  "valence": 0.10,
+  "arousal": 0.20,
+  "energy": 0.10,
+
+  "agency": 0.20,
+  "controllability": 0.08,
+
+  "social_proximity": 0.45,
+  "social_exposure": 0.25,
+  "warmth": 0.30,
+
+  "threat": 0.15,
+  "loss": 0.95,
+  "injustice": 0.20,
+  "disgust": 0.00,
+
+  "uncertainty": 0.20,
+  "curiosity": 0.00,
+  "assertiveness": 0.05,
+
+  "importance": 0.95,
+  "novelty": 0.45
+},
+{
+  "label": 17,
+  "emotion": "joy",
+  "comment": "present-moment positive — less novelty and future-pull than excitement, less bond-focused than love",
+
+  "valence": 0.95,
+  "arousal": 0.60,
+  "energy": 0.70,
+
+  "agency": 0.55,
+  "controllability": 0.60,
+
+  "social_proximity": 0.70,
+  "social_exposure": 0.35,
+  "warmth": 0.70,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.00,
+  "curiosity": 0.30,
+  "assertiveness": 0.45,
+
+  "importance": 0.55,
+  "novelty": 0.55
+},
+
+    {
+  "label": 18,
+  "emotion": "love",
+  "comment": "deep relational bond — highest warmth and social closeness",
+
+  "valence": 0.95,
+  "arousal": 0.60,
+  "energy": 0.65,
+
+  "agency": 0.55,
+  "controllability": 0.50,
+
+  "social_proximity": 0.95,
+  "social_exposure": 0.50,
+  "warmth": 0.95,
+
+  "threat": 0.00,
+  "loss": 0.10,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.15,
+  "curiosity": 0.35,
+  "assertiveness": 0.40,
+
+  "importance": 0.95,
+  "novelty": 0.30
+},
+
+    {
+  "label": 19,
+  "emotion": "nervousness",
+  "comment": "anticipatory social threat — uncertainty high, threat moderate",
+
+  "valence": 0.20,
+  "arousal": 0.75,
+  "energy": 0.45,
+
+  "agency": 0.50,
+  "controllability": 0.25,
+
+  "social_proximity": 0.25,
+  "social_exposure": 0.65,
+  "warmth": 0.20,
+
+  "threat": 0.50,
+  "loss": 0.20,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.75,
+  "curiosity": 0.20,
+  "assertiveness": 0.15,
+
+  "importance": 0.55,
+  "novelty": 0.60
+},
+{
+  "label": 20,
+  "emotion": "optimism",
+  "comment": "future-positive expectation — belief things can go well",
+
+  "valence": 0.80,
+  "arousal": 0.50,
+  "energy": 0.65,
+
+  "agency": 0.65,
+  "controllability": 0.75,
+
+  "social_proximity": 0.55,
+  "social_exposure": 0.20,
+  "warmth": 0.60,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.20,
+  "curiosity": 0.55,
+  "assertiveness": 0.60,
+
+  "importance": 0.60,
+  "novelty": 0.65
+},
+    {
+  "label": 21,
+  "emotion": "pride",
+  "comment": "self-caused positive — achievement/appraisal of self; assertive and socially display-oriented",
+
+  "valence": 0.90,
+  "arousal": 0.60,
+  "energy": 0.70,
+
+  "agency": 0.90,
+  "controllability": 0.55,
+
+  "social_proximity": 0.60,
+  "social_exposure": 0.65,
+  "warmth": 0.45,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.02,
+  "curiosity": 0.20,
+  "assertiveness": 0.80,
+
+  "importance": 0.90,
+  "novelty": 0.35
+},
+    {
+  "label": 22,
+  "emotion": "realization",
+  "comment": "insight event — novelty spike and uncertainty dropping; valence depends on what clicked",
+
+  "valence": 0.50,
+  "arousal": 0.55,
+  "energy": 0.50,
+
+  "agency": 0.60,
+  "controllability": 0.55,
+
+  "social_proximity": 0.30,
+  "social_exposure": 0.20,
+  "warmth": 0.30,
+
+  "threat": 0.10,
+  "loss": 0.10,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.25,
+  "curiosity": 0.65,
+  "assertiveness": 0.50,
+
+  "importance": 0.55,
+  "novelty": 0.80
+},
+
+    {
+  "label": 23,
+  "emotion": "relief",
+  "comment": "threat resolved — arousal dropping, controllability restored",
+
+  "valence": 0.80,
+  "arousal": 0.30,
+  "energy": 0.40,
+
+  "agency": 0.45,
+  "controllability": 0.70,
+
+  "social_proximity": 0.50,
+  "social_exposure": 0.20,
+  "warmth": 0.55,
+
+  "threat": 0.10,
+  "loss": 0.10,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.10,
+  "curiosity": 0.20,
+  "assertiveness": 0.30,
+
+  "importance": 0.75,
+  "novelty": 0.30
+},
+
+    {
+  "label": 24,
+  "emotion": "remorse",
+  "comment": "self-caused harm to others — high agency with moral regret",
+
+  "valence": 0.10,
+  "arousal": 0.40,
+  "energy": 0.20,
+
+  "agency": 0.90,
+  "controllability": 0.30,
+
+  "social_proximity": 0.35,
+  "social_exposure": 0.55,
+  "warmth": 0.35,
+
+  "threat": 0.10,
+  "loss": 0.55,
+  "injustice": 0.35,
+  "disgust": 0.35,
+
+  "uncertainty": 0.20,
+  "curiosity": 0.10,
+  "assertiveness": 0.15,
+
+  "importance": 0.80,
+  "novelty": 0.25
+},
+   {
+  "label": 25,
+  "emotion": "sadness",
+  "comment": "loss-primary, low energy — less catastrophic than grief",
+
+  "valence": 0.15,
+  "arousal": 0.20,
+  "energy": 0.20,
+
+  "agency": 0.30,
+  "controllability": 0.20,
+
+  "social_proximity": 0.35,
+  "social_exposure": 0.20,
+  "warmth": 0.30,
+
+  "threat": 0.10,
+  "loss": 0.80,
+  "injustice": 0.15,
+  "disgust": 0.00,
+
+  "uncertainty": 0.25,
+  "curiosity": 0.10,
+  "assertiveness": 0.10,
+
+  "importance": 0.75,
+  "novelty": 0.25
+},
+
+   {
+  "label": 26,
+  "emotion": "surprise",
+  "comment": "unexpected stimulus — novelty spike with high uncertainty",
+
+  "valence": 0.50,
+  "arousal": 0.75,
+  "energy": 0.65,
+
+  "agency": 0.20,
+  "controllability": 0.35,
+
+  "social_proximity": 0.40,
+  "social_exposure": 0.35,
+  "warmth": 0.30,
+
+  "threat": 0.20,
+  "loss": 0.10,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.85,
+  "curiosity": 0.65,
+  "assertiveness": 0.20,
+
+  "importance": 0.50,
+  "novelty": 0.95
+},
+   {
+  "label": 27,
+  "emotion": "neutral",
+  "comment": "baseline state — absence of strong emotional signals",
+
+  "valence": 0.50,
+  "arousal": 0.10,
+  "energy": 0.20,
+
+  "agency": 0.50,
+  "controllability": 0.50,
+
+  "social_proximity": 0.30,
+  "social_exposure": 0.10,
+  "warmth": 0.30,
+
+  "threat": 0.00,
+  "loss": 0.00,
+  "injustice": 0.00,
+  "disgust": 0.00,
+
+  "uncertainty": 0.10,
+  "curiosity": 0.20,
+  "assertiveness": 0.30,
+
+  "importance": 0.20,
+  "novelty": 0.20
+}
+
+  ]
+}

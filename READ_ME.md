@@ -91,6 +91,7 @@ Predicted signals can be used to condition large language models, enabling respo
 Install dependencies:
 
 pip install -r requirements.txt
+python dataset_annotator.py (To load and annotate datasets)
 
 
 Train models:

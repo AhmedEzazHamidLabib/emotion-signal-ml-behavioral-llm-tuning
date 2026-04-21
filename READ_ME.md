@@ -91,19 +91,24 @@ Predicted signals can be used to condition large language models, enabling respo
 Install dependencies:
 
 pip install -r requirements.txt
+
 python dataset_annotator.py (To load and annotate datasets)
 
 
 Train models:
 
 python train_TFIDF_RR.py
+
 python train_BIGRU.py
+
 python train_distilroberta.py
 
 Evaluate:
 
 python test_roberta.py
+
 python test_BIGRU.py
+
 python test_TFIDF_RR.py
 
 

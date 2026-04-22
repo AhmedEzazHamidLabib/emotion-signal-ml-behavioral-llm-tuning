@@ -1,0 +1,30 @@
+# Core ML
+numpy==1.26.4
+scipy
+scikit-learn
+pandas
+
+# PyTorch (CPU-safe version)
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# HuggingFace
+datasets
+transformers==4.57.1
+tokenizers==0.22.1
+safetensors==0.6.2
+huggingface-hub==0.36.0
+accelerate==1.11.0
+evaluate
+
+# LLM APIs
+openai==1.50.0
+
+# Env / config
+python-dotenv==1.0.1
+
+# Utilities
+joblib==1.5.1
+tqdm==4.67.1
+matplotlib
